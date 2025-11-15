@@ -1,0 +1,7 @@
+variavel;tipo;descricao;fonte
+ano;texto;Ano de referência do Censo (2010 e 2022);Instituto Brasileiro de Geografia e Estatística – IBGE 
+cod_ibge;numérico;Código oficial de 7 dígitos definido pelo IBGE para município;Instituto Brasileiro de Geografia e Estatística – IBGE 
+municipio;texto;Nome do município;Instituto Brasileiro de Geografia e Estatística – IBGE 
+sexo;texto;Homens e Mulheres;Instituto Brasileiro de Geografia e Estatística – IBGE 
+idade;texto;19 faixas etárias quinquenais (de 0 a 4 anos até 90 anos e mais);Instituto Brasileiro de Geografia e Estatística – IBGE 
+populacao;numérico;População residente segundo o sexo e a idade;Instituto Brasileiro de Geografia e Estatística – IBGE 

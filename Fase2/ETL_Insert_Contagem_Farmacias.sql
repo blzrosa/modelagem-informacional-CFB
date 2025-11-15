@@ -1,28 +1,36 @@
-CREATE TEMP TABLE temp_farmacias (
-    UF CHAR(2),
-    Municipio VARCHAR(255),
-    Count INT
+DROP SCHEMA IF EXISTS staging_farmacias CASCADE;
+CREATE SCHEMA staging_farmacias;
+
+CREATE TABLE staging_farmacias.raw_farmacias (
+    UF VARCHAR(10),
+    MUNICIPIO_DESCRICAO VARCHAR(255),
+    Codigo_IBGE VARCHAR(10),
+    Estabelecimentos VARCHAR(20)
 );
 
-COPY temp_farmacias(UF, Municipio, Count)
-FROM './FarmaciasSPCount.csv' DELIMITER ',' CSV HEADER;
+COPY staging_farmacias.raw_farmacias
+FROM './farmacias_sp.csv'
+WITH (FORMAT csv, HEADER true, DELIMITER ',');
 
-WITH cidades_transformadas AS (
-    SELECT 
-        t.UF,
-        t.Municipio,
-        t.Count,
-        d.KeyCidadePotencial
-    FROM temp_farmacias t
-    JOIN dw_score.DimCidadePotencial d 
-        ON t.Municipio = d.NomeCidadePotencial 
-        AND t.UF = d.UFCidadePotencial
+INSERT INTO dw_score.DimContagemFarmacias (
+    QtdFarmacias,
+    NomeCidadeContagem,
+    UFContagem,
+    CodigoIBGE
 )
-INSERT INTO dw_score.DimContagemFarmacias (QtdFarmacias, NomeCidadeContagem, UFContagem)
-SELECT 
-    c.Count AS QtdFarmacias, 
-    c.Municipio AS NomeCidadeContagem, 
-    c.UF AS UFContagem
-FROM cidades_transformadas c;
+SELECT
+    CASE 
+        WHEN Estabelecimentos ~ '^\d+$' THEN Estabelecimentos::INT
+        ELSE NULL
+    END AS QtdFarmacias,
+    MUNICIPIO_DESCRICAO,
+    UF,
+    Codigo_IBGE
+FROM
+    staging_farmacias.raw_farmacias
+WHERE
+    Codigo_IBGE IS NOT NULL
+    AND Codigo_IBGE != 'Totais'
+    AND Estabelecimentos ~ '^\d+$';
 
-DROP TABLE temp_farmacias;
+DROP SCHEMA staging_farmacias CASCADE;

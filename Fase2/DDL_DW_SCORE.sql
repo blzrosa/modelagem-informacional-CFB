@@ -9,7 +9,8 @@ CREATE SCHEMA IF NOT EXISTS dw_score;
 CREATE TABLE dw_score.DimCidadePotencial (
     KeyCidadePotencial INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     NomeCidadePotencial VARCHAR(255) NOT NULL,
-    UFCidadePotencial CHAR(2) NOT NULL
+    UFCidadePotencial CHAR(2) NOT NULL,
+    CodigoIBGE CHAR(7) NOT NULL
 );
 
 CREATE TABLE dw_score.DimPopulacao (
@@ -17,7 +18,8 @@ CREATE TABLE dw_score.DimPopulacao (
     FaixaEtariaPop VARCHAR(32) NOT NULL,
     SexoPop CHAR(1) NOT NULL,
     NomeCidadePopulacao VARCHAR(255) NOT NULL,
-    UFPopulacao CHAR(2) NOT NULL
+    UFPopulacao CHAR(2) NOT NULL,
+    CodigoIBGE CHAR(7) NOT NULL
 );
 
 CREATE TABLE dw_score.DimPesoFaixaEtaria (
@@ -31,7 +33,8 @@ CREATE TABLE dw_score.DimContagemFarmacias (
     KeyContagemFarmacias INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     QtdFarmacias INT CHECK(QtdFarmacias >= 0),
     NomeCidadeContagem VARCHAR(255) NOT NULL,
-    UFContagem CHAR(2) NOT NULL
+    UFContagem CHAR(2) NOT NULL,
+    CodigoIBGE CHAR(7) NOT NULL
 );
 
 /*

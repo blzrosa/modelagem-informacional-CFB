@@ -1,31 +1,21 @@
 /*
 =========================================================
-==  SCRIPT DE EXPORTAÇÃO (BACKUP) PARA CSV
-==
-==  Alvo: Todas as tabelas do schema dw_score
-==  Método: \copy (psql client-side)
-==
+== SCRIPT DE EXPORTAÇÃO (BACKUP) PARA CSV
+== Alvo: Todas as tabelas do schema dw_score
+== Método: \copy (client-side)
 =========================================================
 */
 
-\set base_path './dados/exportados/'
+-- Cria a pasta se não existir
+\! mkdir -p dados/exportados
 
-\echo 'Exportando dw_score.DimCidadePotencial...'
-\copy dw_score.DimCidadePotencial TO :'base_path'DimCidadePotencial.csv WITH (FORMAT CSV, HEADER TRUE, DELIMITER ';');
+\echo 'Iniciando exportacao das tabelas do schema dw_score...'
 
-\echo 'Exportando dw_score.DimPopulacao...'
-\copy dw_score.DimPopulacao TO :'base_path'DimPopulacao.csv WITH (FORMAT CSV, HEADER TRUE, DELIMITER ';');
+\copy dw_score.DimCidadePotencial   TO './dados/exportados/DimCidadePotencial.csv'   CSV HEADER DELIMITER ';'
+\copy dw_score.DimPopulacao         TO './dados/exportados/DimPopulacao.csv'         CSV HEADER DELIMITER ';'
+\copy dw_score.DimPesoFaixaEtaria   TO './dados/exportados/DimPesoFaixaEtaria.csv'   CSV HEADER DELIMITER ';'
+\copy dw_score.DimContagemFarmacias TO './dados/exportados/DimContagemFarmacias.csv' CSV HEADER DELIMITER ';'
+\copy dw_score.DimPIB               TO './dados/exportados/DimPIB.csv'               CSV HEADER DELIMITER ';'
+\copy dw_score.FatoScore            TO './dados/exportados/FatoScore.csv'            CSV HEADER DELIMITER ';'
 
-\echo 'Exportando dw_score.DimPesoFaixaEtaria...'
-\copy dw_score.DimPesoFaixaEtaria TO :'base_path'DimPesoFaixaEtaria.csv WITH (FORMAT CSV, HEADER TRUE, DELIMITER ';');
-
-\echo 'Exportando dw_score.DimContagemFarmacias...'
-\copy dw_score.DimContagemFarmacias TO :'base_path'DimContagemFarmacias.csv WITH (FORMAT CSV, HEADER TRUE, DELIMITER ';');
-
-\echo 'Exportando dw_score.DimPIB...'
-\copy dw_score.DimPIB TO :'base_path'DimPIB.csv WITH (FORMAT CSV, HEADER TRUE, DELIMITER ';');
-
-\echo 'Exportando dw_score.FatoScore...'
-\copy dw_score.FatoScore TO :'base_path'FatoScore.csv WITH (FORMAT CSV, HEADER TRUE, DELIMITER ';');
-
-\echo 'Exportação concluída!'
+\echo '=== EXPORTACAO CONCLUIDA COM SUCESSO! ==='

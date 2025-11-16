@@ -1,0 +1,645 @@
+keycontagemfarmacias;qtdfarmacias;nomecidadecontagem;ufcontagem;codigoibge
+1;4887;São Paulo (território);SP;3550308
+2;585;Campinas;SP;3509502
+3;513;Guarulhos;SP;3518800
+4;339;Santo André;SP;3547809
+5;330;Ribeirão Preto;SP;3543402
+6;321;São Bernardo do Campo;SP;3548708
+7;317;São José do Rio Preto;SP;3549805
+8;312;Sorocaba;SP;3552205
+9;310;Osasco;SP;3534401
+10;297;São José dos Campos;SP;3549904
+11;234;Jundiaí;SP;3525904
+12;225;Franca;SP;3516200
+13;210;Bauru;SP;3506003
+14;202;Mogi das Cruzes;SP;3530607
+15;196;Piracicaba;SP;3538709
+16;183;Santos;SP;3548500
+17;166;Marília;SP;3529005
+18;166;Suzano;SP;3552502
+19;163;Barueri;SP;3505708
+20;153;Carapicuíba;SP;3510609
+21;148;Guarujá;SP;3518701
+22;148;Praia Grande;SP;3541000
+23;147;Mauá;SP;3529401
+24;145;Taubaté;SP;3554102
+25;137;Presidente Prudente;SP;3541406
+26;136;Hortolândia;SP;3519071
+27;134;Americana;SP;3501608
+28;134;São Carlos;SP;3548906
+29;133;Cotia;SP;3513009
+30;129;Itaquaquecetuba;SP;3523107
+31;128;Limeira;SP;3526902
+32;128;Diadema;SP;3513801
+33;118;Araraquara;SP;3503208
+34;115;Sumaré;SP;3552403
+35;115;Araçatuba;SP;3502804
+36;113;São Vicente;SP;3551009
+37;111;São Caetano do Sul;SP;3548807
+38;110;Taboão da Serra;SP;3552809
+39;106;Indaiatuba;SP;3520509
+40;98;Barretos;SP;3505500
+41;96;Bragança Paulista;SP;3507605
+42;96;Rio Claro;SP;3543907
+43;95;Embu;SP;3515004
+44;92;Catanduva;SP;3511102
+45;89;Atibaia;SP;3504107
+46;85;Pindamonhangaba;SP;3538006
+47;83;Santa Bárbara d´Oeste;SP;3545803
+48;82;Itapetininga;SP;3522307
+49;82;Araras;SP;3503307
+50;82;Jacareí;SP;3524402
+51;81;Moji Mirim;SP;3530805
+52;80;Itu;SP;3523909
+53;79;Mogi Guaçu;SP;3530706
+54;73;Birigui;SP;3506508
+55;71;Itapevi;SP;3522505
+56;71;Jaú;SP;3525300
+57;70;Votuporanga;SP;3557105
+58;68;Franco da Rocha;SP;3516408
+59;68;Valinhos;SP;3556206
+60;64;Itanhaém;SP;3522109
+61;64;Matão;SP;3529302
+62;64;Botucatu;SP;3507506
+63;64;Itapecerica da Serra;SP;3522208
+64;62;Francisco Morato;SP;3516309
+65;62;Sertãozinho;SP;3551702
+66;62;Caraguatatuba;SP;3510500
+67;61;Votorantim;SP;3557006
+68;61;Assis;SP;3504008
+69;60;Guaratinguetá;SP;3518404
+70;60;Ourinhos;SP;3534708
+71;60;Itapeva;SP;3522406
+72;59;Salto;SP;3545209
+73;57;Ubatuba;SP;3555406
+74;57;Ferraz de Vasconcelos;SP;3515707
+75;56;Santana de Parnaíba;SP;3547304
+76;55;Poá;SP;3539806
+77;55;Fernandópolis;SP;3515509
+78;54;Itatiba;SP;3523404
+79;54;Avaré;SP;3504503
+80;53;Ibiúna;SP;3519709
+81;51;Tatuí;SP;3554003
+82;50;Paulínia;SP;3536505
+83;50;Ribeirão Pires;SP;3543303
+84;50;Bebedouro;SP;3506102
+85;49;São Sebastião;SP;3550704
+86;49;Taquaritinga;SP;3553708
+87;49;Olímpia;SP;3533908
+88;47;Leme;SP;3526704
+89;46;São João da Boa Vista;SP;3549102
+90;46;Penápolis;SP;3537305
+91;46;Cajamar;SP;3509205
+92;46;Tupã;SP;3555000
+93;45;Jaboticabal;SP;3524303
+94;44;Jales;SP;3524808
+95;44;Bertioga;SP;3506359
+96;44;Lins;SP;3527108
+97;43;Várzea Paulista;SP;3556503
+98;43;Mirassol;SP;3530300
+99;42;Vinhedo;SP;3556701
+100;42;Caieiras;SP;3509007
+101;41;Arujá;SP;3503901
+102;41;Itapira;SP;3522604
+103;40;Jandira;SP;3525003
+104;40;Cruzeiro;SP;3513405
+105;40;Peruíbe;SP;3537602
+106;38;Mongaguá;SP;3531100
+107;38;Itupeva;SP;3524006
+108;36;Cubatão;SP;3513504
+109;36;Campo Limpo Paulista;SP;3509601
+110;35;São Roque;SP;3550605
+111;35;Pirassununga;SP;3539301
+112;35;Andradina;SP;3502101
+113;34;Mairiporã;SP;3528502
+114;34;Ibitinga;SP;3519600
+115;33;Monte Alto;SP;3531308
+116;33;Caçapava;SP;3508504
+117;32;Lorena;SP;3527207
+118;32;Lençóis Paulista;SP;3526803
+119;32;Boituva;SP;3507001
+120;32;Nova Odessa;SP;3533403
+121;32;Mococa;SP;3530508
+122;32;Novo Horizonte;SP;3533502
+123;31;José Bonifácio;SP;3525706
+124;31;Batatais;SP;3505906
+125;31;Piedade;SP;3537800
+126;30;Cabreúva;SP;3508405
+127;29;Santa Fé do Sul;SP;3546603
+128;28;Pederneiras;SP;3536703
+129;28;São José do Rio Pardo;SP;3549706
+130;28;Itararé;SP;3523206
+131;28;Cerquilho;SP;3511508
+132;27;Itápolis;SP;3522703
+133;27;Amparo;SP;3501905
+134;27;Santa Cruz do Rio Pardo;SP;3546405
+135;27;São Joaquim da Barra;SP;3549409
+136;27;Guaíra;SP;3517406
+137;27;Porto Ferreira;SP;3540705
+138;26;Jaguariúna;SP;3524709
+139;26;Garça;SP;3516705
+140;26;Vargem Grande do Sul;SP;3556404
+141;26;Capâo Bonito;SP;3510203
+142;26;Dracena;SP;3514403
+143;26;Barra Bonita;SP;3505302
+144;25;Vargem Grande Paulista;SP;3556453
+145;25;Paraguaçu Paulista;SP;3535507
+146;25;Monte Mor;SP;3531803
+147;25;Adamantina;SP;3500105
+148;24;Porto Feliz;SP;3540606
+149;24;Campos do Jordão;SP;3509700
+150;24;Araçoiaba da Serra;SP;3502903
+151;24;Registro;SP;3542602
+152;24;Cosmópolis;SP;3512803
+153;23;Capivari;SP;3510401
+154;23;Cravinhos;SP;3513108
+155;22;Pereira Barreto;SP;3537404
+156;22;Morro Agudo;SP;3531902
+157;22;São Miguel Arcanjo;SP;3550209
+158;22;Serra Negra;SP;3551603
+159;22;Apiaí;SP;3502705
+160;22;Tietê;SP;3554508
+161;21;Mairinque;SP;3528403
+162;21;São Pedro;SP;3550407
+163;21;Artur Nogueira;SP;3503802
+164;21;Santa Isabel;SP;3546801
+165;21;Itaí;SP;3521804
+166;21;Guariba;SP;3518602
+167;21;Ribeirão Branco;SP;3543006
+168;21;Monte Aprazível;SP;3531407
+169;21;Espírito Santo do Pinhal;SP;3515186
+170;21;Presidente Epitácio;SP;3541307
+171;20;Louveira;SP;3527306
+172;20;Aguaí;SP;3500303
+173;20;Tanabi;SP;3553401
+174;20;Bady Bassitt;SP;3504602
+175;20;Pedreira;SP;3537107
+176;20;Rancharia;SP;3542206
+177;20;Ibaté;SP;3519303
+178;19;Angatuba;SP;3502200
+179;19;Bariri;SP;3505203
+180;19;São Manuel;SP;3550100
+181;19;Agudos;SP;3500709
+182;19;Orlândia;SP;3534302
+183;19;Embu-Guaçu;SP;3515103
+184;19;Salto de Pirapora;SP;3545308
+185;18;Itaberá;SP;3521705
+186;18;Casa Branca;SP;3510807
+187;18;Itajobi;SP;3521903
+188;18;Américo Brasiliense;SP;3501707
+189;18;Promissão;SP;3541604
+190;18;Santa Rita do Passa Quatro;SP;3547502
+191;18;Jardinópolis;SP;3525102
+192;18;Buri;SP;3508009
+193;18;Socorro;SP;3552106
+194;18;Pirapozinho;SP;3539202
+195;18;Presidente Venceslau;SP;3541505
+196;17;Serrana;SP;3551504
+197;17;Aparecida;SP;3502507
+198;17;Viradouro;SP;3556800
+199;17;Auriflama;SP;3504206
+200;17;Nova Granada;SP;3533007
+201;17;Paranapanema;SP;3535804
+202;17;Iguape;SP;3520301
+203;17;Jarinu;SP;3525201
+204;17;Cajuru;SP;3509403
+205;17;Cachoeira Paulista;SP;3508603
+206;17;Rosana;SP;3544251
+207;17;Monte Azul Paulista;SP;3531506
+208;17;Pilar do Sul;SP;3537909
+209;17;Palmital;SP;3535309
+210;17;Pitangueiras;SP;3539509
+211;17;Pontal;SP;3540200
+212;17;Guararapes;SP;3518206
+213;16;Urupês;SP;3556008
+214;16;Guapiaçu;SP;3517505
+215;16;Borborema;SP;3507407
+216;16;Santa Cruz das Palmeiras;SP;3546306
+217;16;Ituverava;SP;3524105
+218;16;Barrinha;SP;3505609
+219;16;Dois Córregos;SP;3514106
+220;16;Guararema;SP;3518305
+221;15;Brotas;SP;3507902
+222;15;Laranjal Paulista;SP;3526407
+223;15;Engenheiro Coelho;SP;3515152
+224;15;Pompéia;SP;3540002
+225;15;Piraju;SP;3538808
+226;15;Ilhabela;SP;3520400
+227;15;Igarapava;SP;3520103
+228;15;Osvaldo Cruz;SP;3534609
+229;14;Teodoro Sampaio;SP;3554300
+230;14;Altinópolis;SP;3501004
+231;14;Colina;SP;3512001
+232;14;Martinópolis;SP;3529203
+233;14;Rio das Pedras;SP;3544004
+234;14;Santa Adélia;SP;3545605
+235;14;Ouroeste;SP;3534757
+236;14;Fartura;SP;3515400
+237;14;Buritama;SP;3508108
+238;14;Águas de Lindóia;SP;3500501
+239;14;Tremembé;SP;3554805
+240;14;Cerqueira César;SP;3511409
+241;14;Conchal;SP;3512209
+242;14;Cândido Mota;SP;3510005
+243;14;Lucélia;SP;3527405
+244;14;Biritiba-Mirim;SP;3506607
+245;13;Piracaia;SP;3538600
+246;13;Pirajuí;SP;3538907
+247;13;Guará;SP;3517703
+248;13;Santa Gertrudes;SP;3546702
+249;13;Bastos;SP;3505807
+250;13;Taquarituba;SP;3553807
+251;13;Guapiara;SP;3517604
+252;13;Pedregulho;SP;3537008
+253;13;Pradópolis;SP;3540903
+254;13;Bálsamo;SP;3504800
+255;13;Ilha Comprida;SP;3520426
+256;13;General Salgado;SP;3516903
+257;12;Junqueirópolis;SP;3526001
+258;12;Capela do Alto;SP;3510302
+259;12;Santa Rosa de Viterbo;SP;3547601
+260;12;Valparaíso;SP;3556305
+261;12;Severínia;SP;3551900
+262;12;Regente Feijó;SP;3542404
+263;12;Descalvado;SP;3513702
+264;12;Maracaí;SP;3528809
+265;12;Guaraci;SP;3517901
+266;12;Ilha Solteira;SP;3520442
+267;11;Tambaú;SP;3553302
+268;11;Valentim Gentil;SP;3556107
+269;11;Iperó;SP;3521002
+270;11;Santo Anastácio;SP;3547700
+271;11;Bocaina;SP;3506805
+272;11;Bernardino de Campos;SP;3506300
+273;11;Cardoso;SP;3510708
+274;11;Cafelândia;SP;3508801
+275;11;Cajati;SP;3509254
+276;11;Caconde;SP;3508702
+277;11;Mirandopólis;SP;3530102
+278;11;Palestina;SP;3535002
+279;11;Ibirá;SP;3519402
+280;11;Castilho;SP;3511003
+281;11;Itaporanga;SP;3522802
+282;11;Estrela d´Oeste;SP;3515202
+283;10;Juquitiba;SP;3526209
+284;10;Iacanga;SP;3519105
+285;10;Rio Grande da Serra;SP;3544103
+286;10;Elias Fausto;SP;3514908
+287;10;Pirangi;SP;3539004
+288;10;Igaraçu do Tietê;SP;3520004
+289;10;Nhandeara;SP;3532603
+290;10;Iepê;SP;3519907
+291;10;Nazaré Paulista;SP;3532405
+292;10;Pindorama;SP;3538105
+293;10;Manduri;SP;3528601
+294;10;Conchas;SP;3512308
+295;10;Cesário Lange;SP;3511607
+296;10;Mineiros do Tietê;SP;3529807
+297;10;Brodowski;SP;3507803
+298;10;Santo Antônio de Posse;SP;3548005
+299;10;Tabapuã;SP;3552601
+300;10;Macatuba;SP;3528007
+301;9;Tapiratiba;SP;3553609
+302;9;Jacupiranga;SP;3524600
+303;9;Bom Jesus dos Perdões;SP;3507100
+304;9;Miguelópolis;SP;3529708
+305;9;Taguaí;SP;3553005
+306;9;Ipuã;SP;3521309
+307;9;Pinhalzinho;SP;3538204
+308;9;Duartina;SP;3514502
+309;9;Potirendaba;SP;3540804
+310;9;Tupi Paulista;SP;3555109
+311;9;Pariquera-Açu;SP;3536208
+312;9;Ipaussu;SP;3520905
+313;9;Cajobi;SP;3509304
+314;9;Cordeirópolis;SP;3512407
+315;9;Álvares Machado;SP;3501301
+316;9;Quatá;SP;3541703
+317;8;Araçariguama;SP;3502754
+318;8;Holambra;SP;3519055
+319;8;Guatapará;SP;3518859
+320;8;Alumínio;SP;3501152
+321;8;Cedral;SP;3511300
+322;8;Flórida Paulista;SP;3516002
+323;8;Divinolândia;SP;3513900
+324;8;Vera Cruz;SP;3556602
+325;8;Cunha;SP;3513603
+326;8;Sales;SP;3544806
+327;8;Piquete;SP;3538501
+328;8;Ribeirão Bonito;SP;3542909
+329;8;Charqueada;SP;3511706
+330;8;São Bento do Sapucaí;SP;3548609
+331;8;Irapuã;SP;3521507
+332;8;Parapuã;SP;3536000
+333;8;Santo Antônio do Aracanguá;SP;3548054
+334;8;Miracatu;SP;3529906
+335;8;Patrocínio Paulista;SP;3536307
+336;8;Ibirarema;SP;3519501
+337;8;Salesópolis;SP;3545001
+338;8;Piratininga;SP;3539400
+339;8;Tabatinga;SP;3552700
+340;8;Sarapuí;SP;3551108
+341;8;Itapuí;SP;3522901
+342;8;Terra Roxa;SP;3554409
+343;8;Tarumã;SP;3553955
+344;8;Uchoa;SP;3555604
+345;7;Américo de Campos;SP;3501806
+346;7;Iracemápolis;SP;3521408
+347;7;Cananéia;SP;3509908
+348;7;Paulo de Faria;SP;3536604
+349;7;Panorama;SP;3535408
+350;7;Pacaembu;SP;3534906
+351;7;Cosmorama;SP;3512902
+352;7;Iaras;SP;3519253
+353;7;Mirante do Paranapanema;SP;3530201
+354;7;Roseira;SP;3544301
+355;7;Pirapora do Bom Jesus;SP;3539103
+356;7;Presidente Bernardes;SP;3541208
+357;7;Riolândia;SP;3544202
+358;7;Itatinga;SP;3523503
+359;7;Santo Antônio da Alegria;SP;3547908
+360;7;Serra Azul;SP;3551405
+361;7;Avanhandava;SP;3504404
+362;7;Águas de Santa Bárbara;SP;3500550
+363;7;Bilac;SP;3506409
+364;7;Sud Mennucci;SP;3552304
+365;7;Mendonça;SP;3529500
+366;7;São Simão;SP;3550902
+367;7;São Sebastião da Grama;SP;3550803
+368;6;Jaborandi;SP;3524204
+369;6;Juquiá;SP;3526100
+370;6;Palmeira d´Oeste;SP;3535200
+371;6;Chavantes;SP;3557204
+372;6;Riversul;SP;3543501
+373;6;Águas da Prata;SP;3500402
+374;6;Lindóia;SP;3527009
+375;6;Boa Esperança do Sul;SP;3506706
+376;6;Joanópolis;SP;3525508
+377;6;Planalto;SP;3539608
+378;6;Nova Campina;SP;3532827
+379;6;Icém;SP;3519808
+380;6;Itirapina;SP;3523602
+381;6;Pereiras;SP;3537503
+382;6;Vargem;SP;3556354
+383;6;Getulina;SP;3517000
+384;6;Rinópolis;SP;3543808
+385;6;Palmares Paulista;SP;3535101
+386;6;Herculândia;SP;3519006
+387;6;Gália;SP;3516606
+388;6;Euclides da Cunha Paulista;SP;3515350
+389;6;Campina do Monte Alegre;SP;3509452
+390;6;Porangaba;SP;3540507
+391;5;Itobi;SP;3523800
+392;5;Nipoã;SP;3532702
+393;5;São João de Iracema;SP;3549250
+394;5;Bananal;SP;3504909
+395;5;Ariranha;SP;3503703
+396;5;Arealva;SP;3503406
+397;5;Estiva Gerbi;SP;3557303
+398;5;Quintana;SP;3542008
+399;5;Urânia;SP;3555802
+400;5;Aramina;SP;3503000
+401;5;Torrinha;SP;3554706
+402;5;Sales Oliveira;SP;3544905
+403;5;Suzanápolis;SP;3552551
+404;5;Luís Antônio;SP;3527603
+405;5;Taiaçu;SP;3553104
+406;5;Sete Barras;SP;3551801
+407;5;Bofete;SP;3506904
+408;5;Bom Sucesso de Itararé;SP;3507159
+409;5;São Pedro do Turvo;SP;3550506
+410;5;Cássia dos Coqueiros;SP;3510906
+411;5;Catiguá;SP;3511201
+412;5;Igaratá;SP;3520202
+413;5;Santa Albertina;SP;3545704
+414;5;Pardinho;SP;3536109
+415;5;Irapuru;SP;3521606
+416;5;Nuporanga;SP;3533601
+417;5;Paraibuna;SP;3535606
+418;5;Nova Europa;SP;3532900
+419;5;Fernando Prestes;SP;3515608
+420;5;Clementina;SP;3511904
+421;5;Salto Grande;SP;3545407
+422;5;Eldorado;SP;3514809
+423;5;Gastão Vidigal;SP;3516804
+424;5;Potim;SP;3540754
+425;5;Dourado;SP;3514304
+426;5;Braúna;SP;3507704
+427;5;Oriente;SP;3534104
+428;4;Ipiguá;SP;3521150
+429;4;Itapirapuã Paulista;SP;3522653
+430;4;Lagoinha;SP;3526308
+431;4;Tarabai;SP;3553906
+432;4;Areiópolis;SP;3503604
+433;4;Macaubal;SP;3528106
+434;4;Adolfo;SP;3500204
+435;4;Jaci;SP;3524501
+436;4;Barbosa;SP;3505104
+437;4;Itariri;SP;3523305
+438;4;São Lourenço da Serra;SP;3549953
+439;4;Itirapuã;SP;3523701
+440;4;Santópolis do Aguapeí;SP;3548401
+441;4;Nova Aliança;SP;3532801
+442;4;Paraíso;SP;3535705
+443;4;Guareí;SP;3518503
+444;4;Iacri;SP;3519204
+445;4;Orindiúva;SP;3534203
+446;4;Santa Branca;SP;3546009
+447;4;Inúbia Paulista;SP;3520806
+448;4;Ouro Verde;SP;3534807
+449;4;Cabrália Paulista;SP;3508306
+450;4;Neves Paulista;SP;3532504
+451;4;Santo Antônio do Pinhal;SP;3548203
+452;4;Morungaba;SP;3532009
+453;4;Santo Antônio do Jardim;SP;3548104
+454;4;Campos Novos Paulista;SP;3509809
+455;4;Canas;SP;3509957
+456;4;Novais;SP;3533254
+457;4;Nova Luzitânia;SP;3533304
+458;4;Dumont;SP;3514601
+459;4;Glicério;SP;3517109
+460;4;Guaraçaí;SP;3517802
+461;4;Rincão;SP;3543709
+462;4;Piacatu;SP;3537701
+463;4;Colômbia;SP;3512100
+464;4;Guarani d´Oeste;SP;3518008
+465;4;Cristais Paulista;SP;3513207
+466;4;Populina;SP;3540408
+467;4;Queiroz;SP;3541802
+468;4;Reginópolis;SP;3542503
+469;4;Rafard;SP;3542107
+470;4;Anhumas;SP;3502408
+471;4;Aparecida d´Oeste;SP;3502606
+472;4;Vista Alegre do Alto;SP;3556909
+473;4;Altair;SP;3500907
+474;3;Alfredo Marcondes;SP;3500808
+475;3;Alto Alegre;SP;3501103
+476;3;Álvaro de Carvalho;SP;3501400
+477;3;Anhembi;SP;3502309
+478;3;João Ramalho;SP;3525607
+479;3;Pontes Gestal;SP;3540309
+480;3;Pontalinda;SP;3540259
+481;3;Emilianópolis;SP;3515129
+482;3;Ubarana;SP;3555356
+483;3;Turmalina;SP;3555307
+484;3;Três Fronteiras;SP;3554904
+485;3;Echaporã;SP;3514700
+486;3;Floreal;SP;3515905
+487;3;Poloni;SP;3539905
+488;3;Platina;SP;3539707
+489;3;Pongaí;SP;3540101
+490;3;Cruzália;SP;3513306
+491;3;Restinga;SP;3542701
+492;3;Monte Alegre do Sul;SP;3531209
+493;3;Nantes;SP;3532157
+494;3;Monteiro Lobato;SP;3531704
+495;3;Santa Maria da Serra;SP;3547007
+496;3;Santa Ernestina;SP;3546504
+497;3;Santo Expedito;SP;3548302
+498;3;Itaóca;SP;3522158
+499;3;Caiuá;SP;3509106
+500;3;Ocauçu;SP;3533700
+501;3;Coronel Macedo;SP;3512605
+502;3;Indiaporã;SP;3520707
+503;3;Paranapuã;SP;3535903
+504;3;Coroados;SP;3512506
+505;3;Guzolândia;SP;3518909
+506;3;Onda Verde;SP;3534005
+507;3;Pedra Bela;SP;3536802
+508;3;Paulicéia;SP;3536406
+509;3;Saltinho;SP;3545159
+510;3;Parisi;SP;3536257
+511;3;Guaiçara;SP;3517208
+512;3;Guaimbê;SP;3517307
+513;3;Rifaina;SP;3543600
+514;3;Ribeirão do Sul;SP;3543204
+515;3;Ribeirão Corrente;SP;3543105
+516;3;Dobrada;SP;3514007
+517;3;Itapura;SP;3523008
+518;3;Barão de Antonina;SP;3505005
+519;3;Barra do Chapéu;SP;3505351
+520;3;Silveiras;SP;3552007
+521;3;Arandu;SP;3503109
+522;3;Mariápolis;SP;3528908
+523;3;Marabá Paulista;SP;3528700
+524;3;Marapoama;SP;3528858
+525;3;Taiúva;SP;3553203
+526;3;Macedônia;SP;3528205
+527;3;Lutécia;SP;3527900
+528;3;Tapiraí;SP;3553500
+529;3;Luiziânia;SP;3527702
+530;3;Lavínia;SP;3526506
+531;3;Lupércio;SP;3527801
+532;3;Narandiba;SP;3532207
+533;3;Buritizal;SP;3508207
+534;3;Meridiano;SP;3529609
+535;3;São José da Bela Vista;SP;3549508
+536;3;São Luís do Paraitinga;SP;3550001
+537;3;Natividade da Serra;SP;3532306
+538;3;Boracéia;SP;3507308
+539;2;Torre de Pedra;SP;3554656
+540;2;Queluz;SP;3541901
+541;2;Álvares Florence;SP;3501202
+542;2;Turiúba;SP;3555208
+543;2;Elisiário;SP;3514924
+544;2;Vitória Brasil;SP;3556958
+545;2;Analândia;SP;3502002
+546;2;Timburi;SP;3554607
+547;2;Florínia;SP;3516101
+548;2;Gabriel Monteiro;SP;3516507
+549;2;Avaí;SP;3504305
+550;2;Taquaral;SP;3553658
+551;2;Taquarivaí;SP;3553856
+552;2;Tejupá;SP;3554201
+553;2;Júlio Mesquita;SP;3525805
+554;2;Magda;SP;3528304
+555;2;Sebastianópolis do Sul;SP;3551306
+556;2;Redenção da Serra;SP;3542305
+557;2;Presidente Alves;SP;3541109
+558;2;Ubirajara;SP;3555505
+559;2;Tuiuti;SP;3554953
+560;2;Embaúba;SP;3514957
+561;2;Pratânia;SP;3541059
+562;2;Espírito Santo do Turvo;SP;3515194
+563;2;Ribeira;SP;3542800
+564;2;Pedro de Toledo;SP;3537206
+565;2;Motuca;SP;3532058
+566;2;Monte Castelo;SP;3531605
+567;2;Caiabu;SP;3508900
+568;2;Santana da Ponte Pensa;SP;3547205
+569;2;Murutinga do Sul;SP;3532108
+570;2;Sabino;SP;3544608
+571;2;Pedranópolis;SP;3536901
+572;2;Gavião Peixoto;SP;3516853
+573;2;Óleo;SP;3533809
+574;2;Sandovalina;SP;3545506
+575;2;Salmourão;SP;3545100
+576;2;Rubinéia;SP;3544509
+577;2;Pedrinhas Paulista;SP;3537156
+578;2;Guarantã;SP;3518107
+579;2;Dolcinópolis;SP;3514205
+580;2;Ribeirão dos Índios;SP;3543238
+581;2;Alambari;SP;3500758
+582;2;União Paulista;SP;3555703
+583;2;Águas de São Pedro;SP;3500600
+584;2;Zacarias;SP;3557154
+585;2;Aspásia;SP;3503950
+586;2;Areias;SP;3503505
+587;2;Lavrinhas;SP;3526605
+588;2;Mesópolis;SP;3529658
+589;2;Bento de Abreu;SP;3506201
+590;2;Iporanga;SP;3521200
+591;2;Ipeúna;SP;3521101
+592;2;Mira Estrela;SP;3530003
+593;2;Lucianópolis;SP;3527504
+594;2;Nova Independência;SP;3533205
+595;2;Santa Lúcia;SP;3546900
+596;2;Santa Rita d´Oeste;SP;3547403
+597;2;Canitar;SP;3510153
+598;2;Cândido Rodrigues;SP;3510104
+599;2;Oscar Bressane;SP;3534500
+600;2;Santa Cruz da Conceição;SP;3546207
+601;2;Nova Canaã Paulista;SP;3532843
+602;2;Indiana;SP;3520608
+603;2;Piquerobi;SP;3538303
+604;2;Mirassolândia;SP;3530409
+605;2;Jambeiro;SP;3524907
+606;2;Jeriquara;SP;3525409
+607;2;Marinópolis;SP;3529104
+608;2;São José do Barreiro;SP;3549607
+609;2;Monções;SP;3531001
+610;2;São João das Duas Pontes;SP;3549201
+611;2;Borebi;SP;3507456
+612;2;Brejo Alegre;SP;3507753
+613;2;Taciba;SP;3552908
+614;2;Barra do Turvo;SP;3505401
+615;1;Quadra;SP;3541653
+616;1;Dirce Reis;SP;3513850
+617;1;Estrela do Norte;SP;3515301
+618;1;Alvinlândia;SP;3501509
+619;1;Uru;SP;3555901
+620;1;Pracinha;SP;3540853
+621;1;Flora Rica;SP;3515806
+622;1;Fernão;SP;3515657
+623;1;Sagres;SP;3544707
+624;1;Ribeirão Grande;SP;3543253
+625;1;Paulistânia;SP;3536570
+626;1;Rubiácea;SP;3544400
+627;1;Nova Castilho;SP;3532868
+628;1;Nova Guataporanga;SP;3533106
+629;1;Itaju;SP;3522000
+630;1;Santa Salete;SP;3547650
+631;1;Santa Mercedes;SP;3547106
+632;1;Corumbataí;SP;3512704
+633;1;Santa Cruz da Esperança;SP;3546256
+634;1;Santa Clara d´Oeste;SP;3546108
+635;1;São João do Pau d´Alho;SP;3549300
+636;1;São Francisco;SP;3549003
+637;1;Sarutaiá;SP;3551207
+638;1;Borá;SP;3507209
+639;1;Balbinos;SP;3504701
+640;1;Mombuca;SP;3530904
+641;1;Lourdes;SP;3527256
+642;1;Jumirim;SP;3525854
+643;1;Arco-Íris;SP;3503356
+644;1;Arapeí;SP;3503158

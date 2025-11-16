@@ -1,0 +1,115 @@
+keypesofaixaetaria;nomeestimativa;faixaetaria;sexofaixaetaria;valorpeso
+1;Uso de medicamentos (Doenças Crônicas);00-04;H;42.6
+2;Uso de medicamentos (Doenças Crônicas);00-04;M;41.4
+3;Uso de medicamentos (Doenças Crônicas);05-09;H;6.7
+4;Uso de medicamentos (Doenças Crônicas);05-09;M;3.9
+5;Uso de medicamentos (Doenças Crônicas);10-14;H;4.5
+6;Uso de medicamentos (Doenças Crônicas);10-14;M;6.5
+7;Uso de medicamentos (Doenças Crônicas);15-19;H;4.5
+8;Uso de medicamentos (Doenças Crônicas);15-19;M;6.5
+9;Uso de medicamentos (Doenças Crônicas);20-24;H;5.5
+10;Uso de medicamentos (Doenças Crônicas);20-24;M;6.4
+11;Uso de medicamentos (Doenças Crônicas);25-29;H;5.5
+12;Uso de medicamentos (Doenças Crônicas);25-29;M;6.4
+13;Uso de medicamentos (Doenças Crônicas);30-34;H;34.8
+14;Uso de medicamentos (Doenças Crônicas);30-34;M;64.5
+15;Uso de medicamentos (Doenças Crônicas);35-39;H;34.8
+16;Uso de medicamentos (Doenças Crônicas);35-39;M;64.5
+17;Uso de medicamentos (Doenças Crônicas);40-44;H;39
+18;Uso de medicamentos (Doenças Crônicas);40-44;M;67.5
+19;Uso de medicamentos (Doenças Crônicas);45-49;H;39
+20;Uso de medicamentos (Doenças Crônicas);45-49;M;67.5
+21;Uso de medicamentos (Doenças Crônicas);50-54;H;50.3
+22;Uso de medicamentos (Doenças Crônicas);50-54;M;76.1
+23;Uso de medicamentos (Doenças Crônicas);55-59;H;50.3
+24;Uso de medicamentos (Doenças Crônicas);55-59;M;76.1
+25;Uso de medicamentos (Doenças Crônicas);60-64;H;68.3
+26;Uso de medicamentos (Doenças Crônicas);60-64;M;83.8
+27;Uso de medicamentos (Doenças Crônicas);65-69;H;68.3
+28;Uso de medicamentos (Doenças Crônicas);65-69;M;83.8
+29;Uso de medicamentos (Doenças Crônicas);70-74;H;79.8
+30;Uso de medicamentos (Doenças Crônicas);70-74;M;89.9
+31;Uso de medicamentos (Doenças Crônicas);75-79;H;79.8
+32;Uso de medicamentos (Doenças Crônicas);75-79;M;89.9
+33;Uso de medicamentos (Doenças Crônicas);80-84;H;85.2
+34;Uso de medicamentos (Doenças Crônicas);80-84;M;90.9
+35;Uso de medicamentos (Doenças Crônicas);85-89;H;85.2
+36;Uso de medicamentos (Doenças Crônicas);85-89;M;90.9
+37;Uso de medicamentos (Doenças Crônicas);90+;H;85.2
+38;Uso de medicamentos (Doenças Crônicas);90+;M;90.9
+39;Prioridade Idosos (60+);00-04;H;0
+40;Prioridade Idosos (60+);00-04;M;0
+41;Prioridade Idosos (60+);05-09;H;0
+42;Prioridade Idosos (60+);05-09;M;0
+43;Prioridade Idosos (60+);10-14;H;0
+44;Prioridade Idosos (60+);10-14;M;0
+45;Prioridade Idosos (60+);15-19;H;0
+46;Prioridade Idosos (60+);15-19;M;0
+47;Prioridade Idosos (60+);20-24;H;0
+48;Prioridade Idosos (60+);20-24;M;0
+49;Prioridade Idosos (60+);25-29;H;0
+50;Prioridade Idosos (60+);25-29;M;0
+51;Prioridade Idosos (60+);30-34;H;0
+52;Prioridade Idosos (60+);30-34;M;0
+53;Prioridade Idosos (60+);35-39;H;0
+54;Prioridade Idosos (60+);35-39;M;0
+55;Prioridade Idosos (60+);40-44;H;0
+56;Prioridade Idosos (60+);40-44;M;0
+57;Prioridade Idosos (60+);45-49;H;0
+58;Prioridade Idosos (60+);45-49;M;0
+59;Prioridade Idosos (60+);50-54;H;0
+60;Prioridade Idosos (60+);50-54;M;0
+61;Prioridade Idosos (60+);55-59;H;0
+62;Prioridade Idosos (60+);55-59;M;0
+63;Prioridade Idosos (60+);60-64;H;10
+64;Prioridade Idosos (60+);60-64;M;10
+65;Prioridade Idosos (60+);65-69;H;20
+66;Prioridade Idosos (60+);65-69;M;20
+67;Prioridade Idosos (60+);70-74;H;30
+68;Prioridade Idosos (60+);70-74;M;30
+69;Prioridade Idosos (60+);75-79;H;40
+70;Prioridade Idosos (60+);75-79;M;40
+71;Prioridade Idosos (60+);80-84;H;50
+72;Prioridade Idosos (60+);80-84;M;50
+73;Prioridade Idosos (60+);85-89;H;60
+74;Prioridade Idosos (60+);85-89;M;60
+75;Prioridade Idosos (60+);90+;H;70
+76;Prioridade Idosos (60+);90+;M;70
+77;Peso Uniforme (Todos);00-04;H;1
+78;Peso Uniforme (Todos);00-04;M;1
+79;Peso Uniforme (Todos);05-09;H;1
+80;Peso Uniforme (Todos);05-09;M;1
+81;Peso Uniforme (Todos);10-14;H;1
+82;Peso Uniforme (Todos);10-14;M;1
+83;Peso Uniforme (Todos);15-19;H;1
+84;Peso Uniforme (Todos);15-19;M;1
+85;Peso Uniforme (Todos);20-24;H;1
+86;Peso Uniforme (Todos);20-24;M;1
+87;Peso Uniforme (Todos);25-29;H;1
+88;Peso Uniforme (Todos);25-29;M;1
+89;Peso Uniforme (Todos);30-34;H;1
+90;Peso Uniforme (Todos);30-34;M;1
+91;Peso Uniforme (Todos);35-39;H;1
+92;Peso Uniforme (Todos);35-39;M;1
+93;Peso Uniforme (Todos);40-44;H;1
+94;Peso Uniforme (Todos);40-44;M;1
+95;Peso Uniforme (Todos);45-49;H;1
+96;Peso Uniforme (Todos);45-49;M;1
+97;Peso Uniforme (Todos);50-54;H;1
+98;Peso Uniforme (Todos);50-54;M;1
+99;Peso Uniforme (Todos);55-59;H;1
+100;Peso Uniforme (Todos);55-59;M;1
+101;Peso Uniforme (Todos);60-64;H;1
+102;Peso Uniforme (Todos);60-64;M;1
+103;Peso Uniforme (Todos);65-69;H;1
+104;Peso Uniforme (Todos);65-69;M;1
+105;Peso Uniforme (Todos);70-74;H;1
+106;Peso Uniforme (Todos);70-74;M;1
+107;Peso Uniforme (Todos);75-79;H;1
+108;Peso Uniforme (Todos);75-79;M;1
+109;Peso Uniforme (Todos);80-84;H;1
+110;Peso Uniforme (Todos);80-84;M;1
+111;Peso Uniforme (Todos);85-89;H;1
+112;Peso Uniforme (Todos);85-89;M;1
+113;Peso Uniforme (Todos);90+;H;1
+114;Peso Uniforme (Todos);90+;M;1

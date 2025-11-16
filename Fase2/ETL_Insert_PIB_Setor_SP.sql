@@ -16,11 +16,9 @@ CREATE TABLE staging_pib_processado.processada (
     CodigoIBGE CHAR(7)
 );
 
-COPY staging_pib_processado.processada
-FROM './dados/processados/pib_sp_processado_por_setor.csv'
-WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+\copy staging_pib_processado.processada FROM './dados/processados/pib_sp_processado_por_setor.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
-INSERT INTO dw_score.FactPIB (
+INSERT INTO dw_score.DimPIB (
     ValorPIB,
     SetorPIB,
     AnoPIB,

@@ -14,11 +14,9 @@ CREATE TABLE staging_farmacias_processadas.processada (
     CodigoIBGE CHAR(7)
 );
 
-COPY staging_farmacias_processadas.processada
-FROM './dados/processados/farmacias_sp_processadas.csv'
-WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+\copy staging_farmacias_processadas.processada FROM './dados/processados/farmacias_sp_processadas.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
-INSERT INTO dw_score.FactContagemFarmacias (
+INSERT INTO dw_score.DimContagemFarmacias (
     QtdFarmacias,
     NomeCidadeContagem,
     UFContagem,

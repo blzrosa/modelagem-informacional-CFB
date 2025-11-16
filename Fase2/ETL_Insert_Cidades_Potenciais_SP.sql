@@ -13,9 +13,7 @@ CREATE TABLE staging_cidades_processadas.processada (
     CodigoIBGE CHAR(7)
 );
 
-COPY staging_cidades_processadas.processada
-FROM './dados/processados/cidades_sp_processadas.csv'
-WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+\copy staging_cidades_processadas.processada FROM './dados/processados/cidades_sp_processadas.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
 INSERT INTO dw_score.DimCidadePotencial (
     NomeCidadePotencial,

@@ -41,13 +41,13 @@ CREATE TABLE dw_score.DimContagemFarmacias (
 
 CREATE TABLE dw_score.DimPIB (
     KeyPIB INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    ValorPIB INT,
+    ValorPIB BIGINT,
     AnoPIB INT NOT NULL,
     SetorPIB VARCHAR(32) NOT NULL,
     NomeCidadePIB VARCHAR(255) NOT NULL,
     UFPIB CHAR(2) NOT NULL,
     CodigoIBGE CHAR(7) NOT NULL
-)
+);
 
 /*
 ============
@@ -60,11 +60,11 @@ CREATE TABLE dw_score.FatoScore (
     PopulacaoTotal INT NOT NULL CHECK(PopulacaoTotal >= 0),
     AnoScore INT NOT NULL CHECK(AnoScore >= 0),
 
-    KeyCidadePotencial NOT NULL REFERENCES dw_score.DimCidadePotencial(KeyCidadePotencial),
-    KeyPopulacao NOT NULL REFERENCES dw_score.DimPopulacao(KeyPopulacao),
-    KeyPesoFaixaEtaria NOT NULL REFERENCES dw_score.DimPesoFaixaEtaria(KeyPesoFaixaEtaria),
-    KeyContagemFarmacias NOT NULL REFERENCES dw_score.DimContagemFarmacias(KeyContagemFarmacias),
-    KeyPIB NOT NULL REFERENCES dw_score.DimPIB(KeyPIB),
+    KeyCidadePotencial INT NOT NULL REFERENCES dw_score.DimCidadePotencial(KeyCidadePotencial),
+    KeyPopulacao INT NOT NULL REFERENCES dw_score.DimPopulacao(KeyPopulacao),
+    KeyPesoFaixaEtaria INT NOT NULL REFERENCES dw_score.DimPesoFaixaEtaria(KeyPesoFaixaEtaria),
+    KeyContagemFarmacias INT NOT NULL REFERENCES dw_score.DimContagemFarmacias(KeyContagemFarmacias),
+    KeyPIB INT NOT NULL REFERENCES dw_score.DimPIB(KeyPIB),
 
     PRIMARY KEY (KeyCidadePotencial, KeyPopulacao, KeyPesoFaixaEtaria, KeyPIB)
-)
+);

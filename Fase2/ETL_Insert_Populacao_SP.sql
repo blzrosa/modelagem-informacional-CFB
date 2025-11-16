@@ -17,9 +17,7 @@ CREATE TABLE staging_populacao_processada.processada (
     CodigoIBGE CHAR(7)
 );
 
-COPY staging_populacao_processada.processada
-FROM './dados/processados/populacao_sp_processada.csv'
-WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+\copy staging_populacao_processada.processada FROM './dados/processados/populacao_sp_processada.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
 INSERT INTO dw_score.DimPopulacao (
     ContagemPop,

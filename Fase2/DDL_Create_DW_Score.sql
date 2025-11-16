@@ -27,6 +27,7 @@ CREATE TABLE dw_score.DimPesoFaixaEtaria (
     KeyPesoFaixaEtaria INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     NomeEstimativa VARCHAR(255) NOT NULL,
     FaixaEtaria VARCHAR(32) NOT NULL,
+    SexoFaixaEtaria CHAR(1) NOT NULL,
     ValorPeso FLOAT NOT NULL
 );
 

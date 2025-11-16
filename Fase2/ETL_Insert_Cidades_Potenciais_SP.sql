@@ -1,43 +1,32 @@
--- Criar schema de staging se não existir
-DROP SCHEMA IF EXISTS staging_municipios CASCADE;
-CREATE SCHEMA staging_municipios;
+/*
+SCRIPT ETL PARA CARGA DA DIMENSÃO CIDADE POTENCIAL
+ORIGEM: dados/processados/cidades_sp_processadas.csv
+DESTINO: dw_score.DimCidadePotencial
+*/
 
--- Criar tabela temporária de staging
-CREATE TABLE staging_municipios.raw_municipios (
-    cod_ibge VARCHAR(7),
-    municipio VARCHAR(255),
-    area_km VARCHAR(50),
-    cod_ra VARCHAR(10),
-    ra VARCHAR(255),
-    cod_rm VARCHAR(10),
-    rm VARCHAR(255),
-    cod_drs VARCHAR(10),
-    drs VARCHAR(255),
-    cod_r_saude VARCHAR(10),
-    r_saude VARCHAR(255)
+DROP SCHEMA IF EXISTS staging_cidades_processadas CASCADE;
+CREATE SCHEMA staging_cidades_processadas;
+
+CREATE TABLE staging_cidades_processadas.processada (
+    NomeCidadePotencial VARCHAR(255),
+    UFCidadePotencial CHAR(2),
+    CodigoIBGE CHAR(7)
 );
 
--- Importar os dados para a tabela de staging
-COPY staging_municipios.raw_municipios
-FROM './codigos_municipios_regioes_sp.csv'
-WITH (FORMAT csv, DELIMITER ';', HEADER true, ENCODING 'LATIN1');
+COPY staging_cidades_processadas.processada
+FROM './dados/processados/cidades_sp_processadas.csv'
+WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
 INSERT INTO dw_score.DimCidadePotencial (
-    NomeCidadePotencial, 
-    UFCidadePotencial, 
+    NomeCidadePotencial,
+    UFCidadePotencial,
     CodigoIBGE
 )
 SELECT
-    municipio,
-    'SP' AS UFCidadePotencial,
-    cod_ibge AS CodigoIBGE
+    NomeCidadePotencial,
+    UFCidadePotencial,
+    CodigoIBGE
 FROM
-    staging_municipios.raw_municipios
-WHERE
-    cod_ibge IS NOT NULL 
-    AND cod_ibge != ''
-    AND municipio IS NOT NULL
-    AND municipio != 'Sem especificação de município'
-    AND municipio != 'Estado de São Paulo';
+    staging_cidades_processadas.processada;
 
-DROP SCHEMA staging_municipios CASCADE;
+DROP SCHEMA staging_cidades_processadas CASCADE;

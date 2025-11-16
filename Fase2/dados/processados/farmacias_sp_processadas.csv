@@ -1,0 +1,645 @@
+QtdFarmacias,NomeCidadeContagem,UFContagem,CodigoIBGE
+4887,São Paulo (território),SP,3550308
+585,Campinas,SP,3509502
+513,Guarulhos,SP,3518800
+339,Santo André,SP,3547809
+330,Ribeirão Preto,SP,3543402
+321,São Bernardo do Campo,SP,3548708
+317,São José do Rio Preto,SP,3549805
+312,Sorocaba,SP,3552205
+310,Osasco,SP,3534401
+297,São José dos Campos,SP,3549904
+234,Jundiaí,SP,3525904
+225,Franca,SP,3516200
+210,Bauru,SP,3506003
+202,Mogi das Cruzes,SP,3530607
+196,Piracicaba,SP,3538709
+183,Santos,SP,3548500
+166,Marília,SP,3529005
+166,Suzano,SP,3552502
+163,Barueri,SP,3505708
+153,Carapicuíba,SP,3510609
+148,Guarujá,SP,3518701
+148,Praia Grande,SP,3541000
+147,Mauá,SP,3529401
+145,Taubaté,SP,3554102
+137,Presidente Prudente,SP,3541406
+136,Hortolândia,SP,3519071
+134,Americana,SP,3501608
+134,São Carlos,SP,3548906
+133,Cotia,SP,3513009
+129,Itaquaquecetuba,SP,3523107
+128,Limeira,SP,3526902
+128,Diadema,SP,3513801
+118,Araraquara,SP,3503208
+115,Sumaré,SP,3552403
+115,Araçatuba,SP,3502804
+113,São Vicente,SP,3551009
+111,São Caetano do Sul,SP,3548807
+110,Taboão da Serra,SP,3552809
+106,Indaiatuba,SP,3520509
+98,Barretos,SP,3505500
+96,Bragança Paulista,SP,3507605
+96,Rio Claro,SP,3543907
+95,Embu,SP,3515004
+92,Catanduva,SP,3511102
+89,Atibaia,SP,3504107
+85,Pindamonhangaba,SP,3538006
+83,Santa Bárbara d´Oeste,SP,3545803
+82,Itapetininga,SP,3522307
+82,Araras,SP,3503307
+82,Jacareí,SP,3524402
+81,Moji Mirim,SP,3530805
+80,Itu,SP,3523909
+79,Mogi Guaçu,SP,3530706
+73,Birigui,SP,3506508
+71,Itapevi,SP,3522505
+71,Jaú,SP,3525300
+70,Votuporanga,SP,3557105
+68,Franco da Rocha,SP,3516408
+68,Valinhos,SP,3556206
+64,Itanhaém,SP,3522109
+64,Matão,SP,3529302
+64,Botucatu,SP,3507506
+64,Itapecerica da Serra,SP,3522208
+62,Francisco Morato,SP,3516309
+62,Sertãozinho,SP,3551702
+62,Caraguatatuba,SP,3510500
+61,Votorantim,SP,3557006
+61,Assis,SP,3504008
+60,Guaratinguetá,SP,3518404
+60,Ourinhos,SP,3534708
+60,Itapeva,SP,3522406
+59,Salto,SP,3545209
+57,Ubatuba,SP,3555406
+57,Ferraz de Vasconcelos,SP,3515707
+56,Santana de Parnaíba,SP,3547304
+55,Poá,SP,3539806
+55,Fernandópolis,SP,3515509
+54,Itatiba,SP,3523404
+54,Avaré,SP,3504503
+53,Ibiúna,SP,3519709
+51,Tatuí,SP,3554003
+50,Paulínia,SP,3536505
+50,Ribeirão Pires,SP,3543303
+50,Bebedouro,SP,3506102
+49,São Sebastião,SP,3550704
+49,Taquaritinga,SP,3553708
+49,Olímpia,SP,3533908
+47,Leme,SP,3526704
+46,São João da Boa Vista,SP,3549102
+46,Penápolis,SP,3537305
+46,Cajamar,SP,3509205
+46,Tupã,SP,3555000
+45,Jaboticabal,SP,3524303
+44,Jales,SP,3524808
+44,Bertioga,SP,3506359
+44,Lins,SP,3527108
+43,Várzea Paulista,SP,3556503
+43,Mirassol,SP,3530300
+42,Vinhedo,SP,3556701
+42,Caieiras,SP,3509007
+41,Arujá,SP,3503901
+41,Itapira,SP,3522604
+40,Jandira,SP,3525003
+40,Cruzeiro,SP,3513405
+40,Peruíbe,SP,3537602
+38,Mongaguá,SP,3531100
+38,Itupeva,SP,3524006
+36,Cubatão,SP,3513504
+36,Campo Limpo Paulista,SP,3509601
+35,São Roque,SP,3550605
+35,Pirassununga,SP,3539301
+35,Andradina,SP,3502101
+34,Mairiporã,SP,3528502
+34,Ibitinga,SP,3519600
+33,Monte Alto,SP,3531308
+33,Caçapava,SP,3508504
+32,Lorena,SP,3527207
+32,Lençóis Paulista,SP,3526803
+32,Boituva,SP,3507001
+32,Nova Odessa,SP,3533403
+32,Mococa,SP,3530508
+32,Novo Horizonte,SP,3533502
+31,José Bonifácio,SP,3525706
+31,Batatais,SP,3505906
+31,Piedade,SP,3537800
+30,Cabreúva,SP,3508405
+29,Santa Fé do Sul,SP,3546603
+28,Pederneiras,SP,3536703
+28,São José do Rio Pardo,SP,3549706
+28,Itararé,SP,3523206
+28,Cerquilho,SP,3511508
+27,Itápolis,SP,3522703
+27,Amparo,SP,3501905
+27,Santa Cruz do Rio Pardo,SP,3546405
+27,São Joaquim da Barra,SP,3549409
+27,Guaíra,SP,3517406
+27,Porto Ferreira,SP,3540705
+26,Jaguariúna,SP,3524709
+26,Garça,SP,3516705
+26,Vargem Grande do Sul,SP,3556404
+26,Capâo Bonito,SP,3510203
+26,Dracena,SP,3514403
+26,Barra Bonita,SP,3505302
+25,Vargem Grande Paulista,SP,3556453
+25,Paraguaçu Paulista,SP,3535507
+25,Monte Mor,SP,3531803
+25,Adamantina,SP,3500105
+24,Porto Feliz,SP,3540606
+24,Campos do Jordão,SP,3509700
+24,Araçoiaba da Serra,SP,3502903
+24,Registro,SP,3542602
+24,Cosmópolis,SP,3512803
+23,Capivari,SP,3510401
+23,Cravinhos,SP,3513108
+22,Pereira Barreto,SP,3537404
+22,Morro Agudo,SP,3531902
+22,São Miguel Arcanjo,SP,3550209
+22,Serra Negra,SP,3551603
+22,Apiaí,SP,3502705
+22,Tietê,SP,3554508
+21,Mairinque,SP,3528403
+21,São Pedro,SP,3550407
+21,Artur Nogueira,SP,3503802
+21,Santa Isabel,SP,3546801
+21,Itaí,SP,3521804
+21,Guariba,SP,3518602
+21,Ribeirão Branco,SP,3543006
+21,Monte Aprazível,SP,3531407
+21,Espírito Santo do Pinhal,SP,3515186
+21,Presidente Epitácio,SP,3541307
+20,Louveira,SP,3527306
+20,Aguaí,SP,3500303
+20,Tanabi,SP,3553401
+20,Bady Bassitt,SP,3504602
+20,Pedreira,SP,3537107
+20,Rancharia,SP,3542206
+20,Ibaté,SP,3519303
+19,Angatuba,SP,3502200
+19,Bariri,SP,3505203
+19,São Manuel,SP,3550100
+19,Agudos,SP,3500709
+19,Orlândia,SP,3534302
+19,Embu-Guaçu,SP,3515103
+19,Salto de Pirapora,SP,3545308
+18,Itaberá,SP,3521705
+18,Casa Branca,SP,3510807
+18,Itajobi,SP,3521903
+18,Américo Brasiliense,SP,3501707
+18,Promissão,SP,3541604
+18,Santa Rita do Passa Quatro,SP,3547502
+18,Jardinópolis,SP,3525102
+18,Buri,SP,3508009
+18,Socorro,SP,3552106
+18,Pirapozinho,SP,3539202
+18,Presidente Venceslau,SP,3541505
+17,Serrana,SP,3551504
+17,Aparecida,SP,3502507
+17,Viradouro,SP,3556800
+17,Auriflama,SP,3504206
+17,Nova Granada,SP,3533007
+17,Paranapanema,SP,3535804
+17,Iguape,SP,3520301
+17,Jarinu,SP,3525201
+17,Cajuru,SP,3509403
+17,Cachoeira Paulista,SP,3508603
+17,Rosana,SP,3544251
+17,Monte Azul Paulista,SP,3531506
+17,Pilar do Sul,SP,3537909
+17,Palmital,SP,3535309
+17,Pitangueiras,SP,3539509
+17,Pontal,SP,3540200
+17,Guararapes,SP,3518206
+16,Urupês,SP,3556008
+16,Guapiaçu,SP,3517505
+16,Borborema,SP,3507407
+16,Santa Cruz das Palmeiras,SP,3546306
+16,Ituverava,SP,3524105
+16,Barrinha,SP,3505609
+16,Dois Córregos,SP,3514106
+16,Guararema,SP,3518305
+15,Brotas,SP,3507902
+15,Laranjal Paulista,SP,3526407
+15,Engenheiro Coelho,SP,3515152
+15,Pompéia,SP,3540002
+15,Piraju,SP,3538808
+15,Ilhabela,SP,3520400
+15,Igarapava,SP,3520103
+15,Osvaldo Cruz,SP,3534609
+14,Teodoro Sampaio,SP,3554300
+14,Altinópolis,SP,3501004
+14,Colina,SP,3512001
+14,Martinópolis,SP,3529203
+14,Rio das Pedras,SP,3544004
+14,Santa Adélia,SP,3545605
+14,Ouroeste,SP,3534757
+14,Fartura,SP,3515400
+14,Buritama,SP,3508108
+14,Águas de Lindóia,SP,3500501
+14,Tremembé,SP,3554805
+14,Cerqueira César,SP,3511409
+14,Conchal,SP,3512209
+14,Cândido Mota,SP,3510005
+14,Lucélia,SP,3527405
+14,Biritiba-Mirim,SP,3506607
+13,Piracaia,SP,3538600
+13,Pirajuí,SP,3538907
+13,Guará,SP,3517703
+13,Santa Gertrudes,SP,3546702
+13,Bastos,SP,3505807
+13,Taquarituba,SP,3553807
+13,Guapiara,SP,3517604
+13,Pedregulho,SP,3537008
+13,Pradópolis,SP,3540903
+13,Bálsamo,SP,3504800
+13,Ilha Comprida,SP,3520426
+13,General Salgado,SP,3516903
+12,Junqueirópolis,SP,3526001
+12,Capela do Alto,SP,3510302
+12,Santa Rosa de Viterbo,SP,3547601
+12,Valparaíso,SP,3556305
+12,Severínia,SP,3551900
+12,Regente Feijó,SP,3542404
+12,Descalvado,SP,3513702
+12,Maracaí,SP,3528809
+12,Guaraci,SP,3517901
+12,Ilha Solteira,SP,3520442
+11,Tambaú,SP,3553302
+11,Valentim Gentil,SP,3556107
+11,Iperó,SP,3521002
+11,Santo Anastácio,SP,3547700
+11,Bocaina,SP,3506805
+11,Bernardino de Campos,SP,3506300
+11,Cardoso,SP,3510708
+11,Cafelândia,SP,3508801
+11,Cajati,SP,3509254
+11,Caconde,SP,3508702
+11,Mirandopólis,SP,3530102
+11,Palestina,SP,3535002
+11,Ibirá,SP,3519402
+11,Castilho,SP,3511003
+11,Itaporanga,SP,3522802
+11,Estrela d´Oeste,SP,3515202
+10,Juquitiba,SP,3526209
+10,Iacanga,SP,3519105
+10,Rio Grande da Serra,SP,3544103
+10,Elias Fausto,SP,3514908
+10,Pirangi,SP,3539004
+10,Igaraçu do Tietê,SP,3520004
+10,Nhandeara,SP,3532603
+10,Iepê,SP,3519907
+10,Nazaré Paulista,SP,3532405
+10,Pindorama,SP,3538105
+10,Manduri,SP,3528601
+10,Conchas,SP,3512308
+10,Cesário Lange,SP,3511607
+10,Mineiros do Tietê,SP,3529807
+10,Brodowski,SP,3507803
+10,Santo Antônio de Posse,SP,3548005
+10,Tabapuã,SP,3552601
+10,Macatuba,SP,3528007
+9,Tapiratiba,SP,3553609
+9,Jacupiranga,SP,3524600
+9,Bom Jesus dos Perdões,SP,3507100
+9,Miguelópolis,SP,3529708
+9,Taguaí,SP,3553005
+9,Ipuã,SP,3521309
+9,Pinhalzinho,SP,3538204
+9,Duartina,SP,3514502
+9,Potirendaba,SP,3540804
+9,Tupi Paulista,SP,3555109
+9,Pariquera-Açu,SP,3536208
+9,Ipaussu,SP,3520905
+9,Cajobi,SP,3509304
+9,Cordeirópolis,SP,3512407
+9,Álvares Machado,SP,3501301
+9,Quatá,SP,3541703
+8,Araçariguama,SP,3502754
+8,Holambra,SP,3519055
+8,Guatapará,SP,3518859
+8,Alumínio,SP,3501152
+8,Cedral,SP,3511300
+8,Flórida Paulista,SP,3516002
+8,Divinolândia,SP,3513900
+8,Vera Cruz,SP,3556602
+8,Cunha,SP,3513603
+8,Sales,SP,3544806
+8,Piquete,SP,3538501
+8,Ribeirão Bonito,SP,3542909
+8,Charqueada,SP,3511706
+8,São Bento do Sapucaí,SP,3548609
+8,Irapuã,SP,3521507
+8,Parapuã,SP,3536000
+8,Santo Antônio do Aracanguá,SP,3548054
+8,Miracatu,SP,3529906
+8,Patrocínio Paulista,SP,3536307
+8,Ibirarema,SP,3519501
+8,Salesópolis,SP,3545001
+8,Piratininga,SP,3539400
+8,Tabatinga,SP,3552700
+8,Sarapuí,SP,3551108
+8,Itapuí,SP,3522901
+8,Terra Roxa,SP,3554409
+8,Tarumã,SP,3553955
+8,Uchoa,SP,3555604
+7,Américo de Campos,SP,3501806
+7,Iracemápolis,SP,3521408
+7,Cananéia,SP,3509908
+7,Paulo de Faria,SP,3536604
+7,Panorama,SP,3535408
+7,Pacaembu,SP,3534906
+7,Cosmorama,SP,3512902
+7,Iaras,SP,3519253
+7,Mirante do Paranapanema,SP,3530201
+7,Roseira,SP,3544301
+7,Pirapora do Bom Jesus,SP,3539103
+7,Presidente Bernardes,SP,3541208
+7,Riolândia,SP,3544202
+7,Itatinga,SP,3523503
+7,Santo Antônio da Alegria,SP,3547908
+7,Serra Azul,SP,3551405
+7,Avanhandava,SP,3504404
+7,Águas de Santa Bárbara,SP,3500550
+7,Bilac,SP,3506409
+7,Sud Mennucci,SP,3552304
+7,Mendonça,SP,3529500
+7,São Simão,SP,3550902
+7,São Sebastião da Grama,SP,3550803
+6,Jaborandi,SP,3524204
+6,Juquiá,SP,3526100
+6,Palmeira d´Oeste,SP,3535200
+6,Chavantes,SP,3557204
+6,Riversul,SP,3543501
+6,Águas da Prata,SP,3500402
+6,Lindóia,SP,3527009
+6,Boa Esperança do Sul,SP,3506706
+6,Joanópolis,SP,3525508
+6,Planalto,SP,3539608
+6,Nova Campina,SP,3532827
+6,Icém,SP,3519808
+6,Itirapina,SP,3523602
+6,Pereiras,SP,3537503
+6,Vargem,SP,3556354
+6,Getulina,SP,3517000
+6,Rinópolis,SP,3543808
+6,Palmares Paulista,SP,3535101
+6,Herculândia,SP,3519006
+6,Gália,SP,3516606
+6,Euclides da Cunha Paulista,SP,3515350
+6,Campina do Monte Alegre,SP,3509452
+6,Porangaba,SP,3540507
+5,Itobi,SP,3523800
+5,Nipoã,SP,3532702
+5,São João de Iracema,SP,3549250
+5,Bananal,SP,3504909
+5,Ariranha,SP,3503703
+5,Arealva,SP,3503406
+5,Estiva Gerbi,SP,3557303
+5,Quintana,SP,3542008
+5,Urânia,SP,3555802
+5,Aramina,SP,3503000
+5,Torrinha,SP,3554706
+5,Sales Oliveira,SP,3544905
+5,Suzanápolis,SP,3552551
+5,Luís Antônio,SP,3527603
+5,Taiaçu,SP,3553104
+5,Sete Barras,SP,3551801
+5,Bofete,SP,3506904
+5,Bom Sucesso de Itararé,SP,3507159
+5,São Pedro do Turvo,SP,3550506
+5,Cássia dos Coqueiros,SP,3510906
+5,Catiguá,SP,3511201
+5,Igaratá,SP,3520202
+5,Santa Albertina,SP,3545704
+5,Pardinho,SP,3536109
+5,Irapuru,SP,3521606
+5,Nuporanga,SP,3533601
+5,Paraibuna,SP,3535606
+5,Nova Europa,SP,3532900
+5,Fernando Prestes,SP,3515608
+5,Clementina,SP,3511904
+5,Salto Grande,SP,3545407
+5,Eldorado,SP,3514809
+5,Gastão Vidigal,SP,3516804
+5,Potim,SP,3540754
+5,Dourado,SP,3514304
+5,Braúna,SP,3507704
+5,Oriente,SP,3534104
+4,Ipiguá,SP,3521150
+4,Itapirapuã Paulista,SP,3522653
+4,Lagoinha,SP,3526308
+4,Tarabai,SP,3553906
+4,Areiópolis,SP,3503604
+4,Macaubal,SP,3528106
+4,Adolfo,SP,3500204
+4,Jaci,SP,3524501
+4,Barbosa,SP,3505104
+4,Itariri,SP,3523305
+4,São Lourenço da Serra,SP,3549953
+4,Itirapuã,SP,3523701
+4,Santópolis do Aguapeí,SP,3548401
+4,Nova Aliança,SP,3532801
+4,Paraíso,SP,3535705
+4,Guareí,SP,3518503
+4,Iacri,SP,3519204
+4,Orindiúva,SP,3534203
+4,Santa Branca,SP,3546009
+4,Inúbia Paulista,SP,3520806
+4,Ouro Verde,SP,3534807
+4,Cabrália Paulista,SP,3508306
+4,Neves Paulista,SP,3532504
+4,Santo Antônio do Pinhal,SP,3548203
+4,Morungaba,SP,3532009
+4,Santo Antônio do Jardim,SP,3548104
+4,Campos Novos Paulista,SP,3509809
+4,Canas,SP,3509957
+4,Novais,SP,3533254
+4,Nova Luzitânia,SP,3533304
+4,Dumont,SP,3514601
+4,Glicério,SP,3517109
+4,Guaraçaí,SP,3517802
+4,Rincão,SP,3543709
+4,Piacatu,SP,3537701
+4,Colômbia,SP,3512100
+4,Guarani d´Oeste,SP,3518008
+4,Cristais Paulista,SP,3513207
+4,Populina,SP,3540408
+4,Queiroz,SP,3541802
+4,Reginópolis,SP,3542503
+4,Rafard,SP,3542107
+4,Anhumas,SP,3502408
+4,Aparecida d´Oeste,SP,3502606
+4,Vista Alegre do Alto,SP,3556909
+4,Altair,SP,3500907
+3,Alfredo Marcondes,SP,3500808
+3,Alto Alegre,SP,3501103
+3,Álvaro de Carvalho,SP,3501400
+3,Anhembi,SP,3502309
+3,João Ramalho,SP,3525607
+3,Pontes Gestal,SP,3540309
+3,Pontalinda,SP,3540259
+3,Emilianópolis,SP,3515129
+3,Ubarana,SP,3555356
+3,Turmalina,SP,3555307
+3,Três Fronteiras,SP,3554904
+3,Echaporã,SP,3514700
+3,Floreal,SP,3515905
+3,Poloni,SP,3539905
+3,Platina,SP,3539707
+3,Pongaí,SP,3540101
+3,Cruzália,SP,3513306
+3,Restinga,SP,3542701
+3,Monte Alegre do Sul,SP,3531209
+3,Nantes,SP,3532157
+3,Monteiro Lobato,SP,3531704
+3,Santa Maria da Serra,SP,3547007
+3,Santa Ernestina,SP,3546504
+3,Santo Expedito,SP,3548302
+3,Itaóca,SP,3522158
+3,Caiuá,SP,3509106
+3,Ocauçu,SP,3533700
+3,Coronel Macedo,SP,3512605
+3,Indiaporã,SP,3520707
+3,Paranapuã,SP,3535903
+3,Coroados,SP,3512506
+3,Guzolândia,SP,3518909
+3,Onda Verde,SP,3534005
+3,Pedra Bela,SP,3536802
+3,Paulicéia,SP,3536406
+3,Saltinho,SP,3545159
+3,Parisi,SP,3536257
+3,Guaiçara,SP,3517208
+3,Guaimbê,SP,3517307
+3,Rifaina,SP,3543600
+3,Ribeirão do Sul,SP,3543204
+3,Ribeirão Corrente,SP,3543105
+3,Dobrada,SP,3514007
+3,Itapura,SP,3523008
+3,Barão de Antonina,SP,3505005
+3,Barra do Chapéu,SP,3505351
+3,Silveiras,SP,3552007
+3,Arandu,SP,3503109
+3,Mariápolis,SP,3528908
+3,Marabá Paulista,SP,3528700
+3,Marapoama,SP,3528858
+3,Taiúva,SP,3553203
+3,Macedônia,SP,3528205
+3,Lutécia,SP,3527900
+3,Tapiraí,SP,3553500
+3,Luiziânia,SP,3527702
+3,Lavínia,SP,3526506
+3,Lupércio,SP,3527801
+3,Narandiba,SP,3532207
+3,Buritizal,SP,3508207
+3,Meridiano,SP,3529609
+3,São José da Bela Vista,SP,3549508
+3,São Luís do Paraitinga,SP,3550001
+3,Natividade da Serra,SP,3532306
+3,Boracéia,SP,3507308
+2,Torre de Pedra,SP,3554656
+2,Queluz,SP,3541901
+2,Álvares Florence,SP,3501202
+2,Turiúba,SP,3555208
+2,Elisiário,SP,3514924
+2,Vitória Brasil,SP,3556958
+2,Analândia,SP,3502002
+2,Timburi,SP,3554607
+2,Florínia,SP,3516101
+2,Gabriel Monteiro,SP,3516507
+2,Avaí,SP,3504305
+2,Taquaral,SP,3553658
+2,Taquarivaí,SP,3553856
+2,Tejupá,SP,3554201
+2,Júlio Mesquita,SP,3525805
+2,Magda,SP,3528304
+2,Sebastianópolis do Sul,SP,3551306
+2,Redenção da Serra,SP,3542305
+2,Presidente Alves,SP,3541109
+2,Ubirajara,SP,3555505
+2,Tuiuti,SP,3554953
+2,Embaúba,SP,3514957
+2,Pratânia,SP,3541059
+2,Espírito Santo do Turvo,SP,3515194
+2,Ribeira,SP,3542800
+2,Pedro de Toledo,SP,3537206
+2,Motuca,SP,3532058
+2,Monte Castelo,SP,3531605
+2,Caiabu,SP,3508900
+2,Santana da Ponte Pensa,SP,3547205
+2,Murutinga do Sul,SP,3532108
+2,Sabino,SP,3544608
+2,Pedranópolis,SP,3536901
+2,Gavião Peixoto,SP,3516853
+2,Óleo,SP,3533809
+2,Sandovalina,SP,3545506
+2,Salmourão,SP,3545100
+2,Rubinéia,SP,3544509
+2,Pedrinhas Paulista,SP,3537156
+2,Guarantã,SP,3518107
+2,Dolcinópolis,SP,3514205
+2,Ribeirão dos Índios,SP,3543238
+2,Alambari,SP,3500758
+2,União Paulista,SP,3555703
+2,Águas de São Pedro,SP,3500600
+2,Zacarias,SP,3557154
+2,Aspásia,SP,3503950
+2,Areias,SP,3503505
+2,Lavrinhas,SP,3526605
+2,Mesópolis,SP,3529658
+2,Bento de Abreu,SP,3506201
+2,Iporanga,SP,3521200
+2,Ipeúna,SP,3521101
+2,Mira Estrela,SP,3530003
+2,Lucianópolis,SP,3527504
+2,Nova Independência,SP,3533205
+2,Santa Lúcia,SP,3546900
+2,Santa Rita d´Oeste,SP,3547403
+2,Canitar,SP,3510153
+2,Cândido Rodrigues,SP,3510104
+2,Oscar Bressane,SP,3534500
+2,Santa Cruz da Conceição,SP,3546207
+2,Nova Canaã Paulista,SP,3532843
+2,Indiana,SP,3520608
+2,Piquerobi,SP,3538303
+2,Mirassolândia,SP,3530409
+2,Jambeiro,SP,3524907
+2,Jeriquara,SP,3525409
+2,Marinópolis,SP,3529104
+2,São José do Barreiro,SP,3549607
+2,Monções,SP,3531001
+2,São João das Duas Pontes,SP,3549201
+2,Borebi,SP,3507456
+2,Brejo Alegre,SP,3507753
+2,Taciba,SP,3552908
+2,Barra do Turvo,SP,3505401
+1,Quadra,SP,3541653
+1,Dirce Reis,SP,3513850
+1,Estrela do Norte,SP,3515301
+1,Alvinlândia,SP,3501509
+1,Uru,SP,3555901
+1,Pracinha,SP,3540853
+1,Flora Rica,SP,3515806
+1,Fernão,SP,3515657
+1,Sagres,SP,3544707
+1,Ribeirão Grande,SP,3543253
+1,Paulistânia,SP,3536570
+1,Rubiácea,SP,3544400
+1,Nova Castilho,SP,3532868
+1,Nova Guataporanga,SP,3533106
+1,Itaju,SP,3522000
+1,Santa Salete,SP,3547650
+1,Santa Mercedes,SP,3547106
+1,Corumbataí,SP,3512704
+1,Santa Cruz da Esperança,SP,3546256
+1,Santa Clara d´Oeste,SP,3546108
+1,São João do Pau d´Alho,SP,3549300
+1,São Francisco,SP,3549003
+1,Sarutaiá,SP,3551207
+1,Borá,SP,3507209
+1,Balbinos,SP,3504701
+1,Mombuca,SP,3530904
+1,Lourdes,SP,3527256
+1,Jumirim,SP,3525854
+1,Arco-Íris,SP,3503356
+1,Arapeí,SP,3503158

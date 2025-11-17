@@ -1,28 +1,21 @@
 /*
 =========================================================
-== ARQUIVO 5: EXPORTAÇÃO (BACKUP) PARA CSV
-==
-== OBJETIVO: Exportar todas as tabelas do schema dw_score
-==           para arquivos .csv na pasta 'dados/exportados'.
-== ATENÇÃO:  Atualizado para refletir o DDL v3.0
+== SCRIPT DE EXPORTAÇÃO (BACKUP) PARA CSV
+== Alvo: Todas as tabelas do schema dw_score
+== Método: \copy (client-side)
 =========================================================
 */
 
--- Cria a pasta 'dados/exportados' se não existir
+-- Cria a pasta se não existir
 \! mkdir -p dados/exportados
 
 \echo 'Iniciando exportacao das tabelas do schema dw_score...'
 
--- Exportação das Dimensões
 \copy dw_score.DimCidadePotencial   TO './dados/exportados/DimCidadePotencial.csv'   CSV HEADER DELIMITER ';'
 \copy dw_score.DimPopulacao         TO './dados/exportados/DimPopulacao.csv'         CSV HEADER DELIMITER ';'
 \copy dw_score.DimPesoFaixaEtaria   TO './dados/exportados/DimPesoFaixaEtaria.csv'   CSV HEADER DELIMITER ';'
 \copy dw_score.DimContagemFarmacias TO './dados/exportados/DimContagemFarmacias.csv' CSV HEADER DELIMITER ';'
 \copy dw_score.DimPIB               TO './dados/exportados/DimPIB.csv'               CSV HEADER DELIMITER ';'
-\copy dw_score.DimEstimativa        TO './dados/exportados/DimEstimativa.csv'        CSV HEADER DELIMITER ';'
-
--- Exportação das Fatos (Atualizado de 'FatoScore' para as tabelas corretas)
-\copy dw_score.FatoScoreDetalhado   TO './dados/exportados/FatoScoreDetalhado.csv'   CSV HEADER DELIMITER ';'
-\copy dw_score.FatoScoreAgregado    TO './dados/exportados/FatoScoreAgregado.csv'    CSV HEADER DELIMITER ';'
+\copy dw_score.FatoScore            TO './dados/exportados/FatoScore.csv'            CSV HEADER DELIMITER ';'
 
 \echo '=== EXPORTACAO CONCLUIDA COM SUCESSO! ==='

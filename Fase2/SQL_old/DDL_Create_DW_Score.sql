@@ -1,11 +1,4 @@
-/*
-=========================================================
-== ARQUIVO 1: DDL (Data Definition Language)
-==
-== OBJETIVO: Criar o schema e todas as tabelas do DW.
-== CONTEÚDO: Script DDL_Create_DW_Score.sql (v3.0)
-=========================================================
-*/
+-- v3.0
 
 DROP SCHEMA IF EXISTS dw_score CASCADE; 
 CREATE SCHEMA IF NOT EXISTS dw_score;
@@ -21,7 +14,6 @@ CREATE TABLE dw_score.DimCidadePotencial (
     UFCidadePotencial CHAR(2) NOT NULL,
     CodigoIBGE CHAR(7) NOT NULL UNIQUE
 );
---
 
 CREATE TABLE dw_score.DimPopulacao (
     KeyPopulacao INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -32,7 +24,6 @@ CREATE TABLE dw_score.DimPopulacao (
     UFPopulacao CHAR(2) NOT NULL,
     CodigoIBGE CHAR(7) NOT NULL
 );
---
 
 CREATE TABLE dw_score.DimPesoFaixaEtaria (
     KeyPesoFaixaEtaria INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -41,7 +32,6 @@ CREATE TABLE dw_score.DimPesoFaixaEtaria (
     SexoFaixaEtaria CHAR(1) NOT NULL,
     ValorPeso FLOAT NOT NULL
 );
---
 
 CREATE TABLE dw_score.DimContagemFarmacias (
     KeyContagemFarmacias INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -50,7 +40,6 @@ CREATE TABLE dw_score.DimContagemFarmacias (
     UFContagem CHAR(2) NOT NULL,
     CodigoIBGE CHAR(7) NOT NULL UNIQUE
 );
---
 
 CREATE TABLE dw_score.DimPIB (
     KeyPIB INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -61,7 +50,6 @@ CREATE TABLE dw_score.DimPIB (
     UFPIB CHAR(2) NOT NULL,
     CodigoIBGE CHAR(7) NOT NULL
 );
---
 
 CREATE TABLE dw_score.DimEstimativa (
     KeyEstimativa INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -73,17 +61,11 @@ CREATE TABLE dw_score.DimEstimativa (
     PesoScorePIB FLOAT NOT NULL,
     CHECK(PesoScorePopulacao + PesoScoreSaturacao + PesoScorePIB = 1)
 );
---
 
 /*
-======================
-==  FATOS (PLURAL)  ==
-======================
-*/
-
-/*
-== FATO 1: DETALHADO ==
--- Granularidade: Cidade, Estimativa, Ano
+============
+==  FATO  ==
+============
 */
 CREATE TABLE dw_score.FatoScoreDetalhado (
     -- Chaves Estrangeiras (PK Composta)
@@ -113,29 +95,24 @@ CREATE TABLE dw_score.FatoScoreDetalhado (
     -- Chave Primária
     PRIMARY KEY (KeyCidadePotencial, KeyEstimativa, AnoScore)
 );
---
 
-/*
-== FATO 2: AGREGADO ==
--- Granularidade: Cidade, Ano
--- Esta tabela é derivada da FatoScoreDetalhado
-*/
+-- Granularidade: 1 linha por Cidade, por Ano
+-- Agrega os scores de todas as estimativas
 CREATE TABLE dw_score.FatoScoreAgregado (
     -- Chaves
     KeyCidadePotencial INT NOT NULL REFERENCES dw_score.DimCidadePotencial(KeyCidadePotencial),
     AnoScore INT NOT NULL CHECK(AnoScore >= 0),
 
-    -- Métricas de Fonte (consolidadas)
+    -- Métricas de Fonte (são as mesmas para a cidade/ano, independente da estimativa)
     PopulacaoTotal INT NOT NULL CHECK(PopulacaoTotal >= 0),
     QtdFarmacias INT NOT NULL CHECK(QtdFarmacias >= 0),
     ValorPIBComercioServicos BIGINT NOT NULL CHECK(ValorPIBComercioServicos >= 0),
 
-    -- Métricas Agregadas (consolidadas das várias estimativas)
+    -- Métricas Agregadas (aqui está a diferença)
     ScoreFinalNormMedio FLOAT NOT NULL, -- A média do ScoreFinalNorm de todas as estimativas
-    ScoreFinalNormMax FLOAT NOT NULL,   -- O score máximo que a cidade atingiu (melhor cenário)
+    ScoreFinalNormMax FLOAT NOT NULL,   -- O score máximo que a cidade atingiu (considerando a melhor estimativa)
     RankingGlobal INT,                  -- Um ranking geral (baseado no score médio)
 
     -- Chave Primária
     PRIMARY KEY (KeyCidadePotencial, AnoScore)
 );
---

@@ -1,3 +1,5 @@
+-- v3.0
+
 DROP SCHEMA IF EXISTS dw_score CASCADE; 
 CREATE SCHEMA IF NOT EXISTS dw_score;
 
@@ -10,7 +12,7 @@ CREATE TABLE dw_score.DimCidadePotencial (
     KeyCidadePotencial INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     NomeCidadePotencial VARCHAR(255) NOT NULL,
     UFCidadePotencial CHAR(2) NOT NULL,
-    CodigoIBGE CHAR(7) NOT NULL
+    CodigoIBGE CHAR(7) NOT NULL UNIQUE
 );
 
 CREATE TABLE dw_score.DimPopulacao (
@@ -36,7 +38,7 @@ CREATE TABLE dw_score.DimContagemFarmacias (
     QtdFarmacias INT CHECK(QtdFarmacias >= 0),
     NomeCidadeContagem VARCHAR(255) NOT NULL,
     UFContagem CHAR(2) NOT NULL,
-    CodigoIBGE CHAR(7) NOT NULL
+    CodigoIBGE CHAR(7) NOT NULL UNIQUE
 );
 
 CREATE TABLE dw_score.DimPIB (
@@ -49,22 +51,68 @@ CREATE TABLE dw_score.DimPIB (
     CodigoIBGE CHAR(7) NOT NULL
 );
 
+CREATE TABLE dw_score.DimEstimativa (
+    KeyEstimativa INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    NomeEstimativa VARCHAR(255) NOT NULL UNIQUE,
+    DescricaoEstimativa TEXT,
+    
+    PesoScorePopulacao FLOAT NOT NULL,
+    PesoScoreSaturacao FLOAT NOT NULL,
+    PesoScorePIB FLOAT NOT NULL,
+    CHECK(PesoScorePopulacao + PesoScoreSaturacao + PesoScorePIB = 1)
+);
+
 /*
 ============
 ==  FATO  ==
 ============
 */
-CREATE TABLE dw_score.FatoScore (
-    ValorScore FLOAT NOT NULL,
-    ContagemFarmacias INT NOT NULL CHECK(ContagemFarmacias >= 0),
-    PopulacaoTotal INT NOT NULL CHECK(PopulacaoTotal >= 0),
+CREATE TABLE dw_score.FatoScoreDetalhado (
+    -- Chaves Estrangeiras (PK Composta)
+    KeyCidadePotencial INT NOT NULL REFERENCES dw_score.DimCidadePotencial(KeyCidadePotencial),
+    KeyEstimativa INT NOT NULL REFERENCES dw_score.DimEstimativa(KeyEstimativa),
     AnoScore INT NOT NULL CHECK(AnoScore >= 0),
 
-    KeyCidadePotencial INT NOT NULL REFERENCES dw_score.DimCidadePotencial(KeyCidadePotencial),
-    KeyPopulacao INT NOT NULL REFERENCES dw_score.DimPopulacao(KeyPopulacao),
-    KeyPesoFaixaEtaria INT NOT NULL REFERENCES dw_score.DimPesoFaixaEtaria(KeyPesoFaixaEtaria),
-    KeyContagemFarmacias INT NOT NULL REFERENCES dw_score.DimContagemFarmacias(KeyContagemFarmacias),
-    KeyPIB INT NOT NULL REFERENCES dw_score.DimPIB(KeyPIB),
+    -- Métricas de "Fonte" (usadas no cálculo)
+    PopulacaoTotal INT NOT NULL CHECK(PopulacaoTotal >= 0),
+    QtdFarmacias INT NOT NULL CHECK(QtdFarmacias >= 0),
+    ValorPIBComercioServicos BIGINT NOT NULL CHECK(ValorPIBComercioServicos >= 0),
 
-    PRIMARY KEY (KeyCidadePotencial, KeyPopulacao, KeyPesoFaixaEtaria, KeyPIB)
+    -- Métricas de Score (Raw)
+    ScorePopRaw FLOAT NOT NULL,
+    ScoreSaturacaoRaw FLOAT NOT NULL,
+    ScorePIBRaw FLOAT NOT NULL,
+    
+    -- Métricas de Score (Normalizadas)
+    ScorePopNorm FLOAT NOT NULL,
+    ScoreSaturacaoNorm FLOAT NOT NULL,
+    ScorePIBNorm FLOAT NOT NULL,
+
+    -- Score Final
+    ScoreFinal FLOAT NOT NULL,
+    ScoreFinalNorm FLOAT NOT NULL,
+
+    -- Chave Primária
+    PRIMARY KEY (KeyCidadePotencial, KeyEstimativa, AnoScore)
+);
+
+-- Granularidade: 1 linha por Cidade, por Ano
+-- Agrega os scores de todas as estimativas
+CREATE TABLE dw_score.FatoScoreAgregado (
+    -- Chaves
+    KeyCidadePotencial INT NOT NULL REFERENCES dw_score.DimCidadePotencial(KeyCidadePotencial),
+    AnoScore INT NOT NULL CHECK(AnoScore >= 0),
+
+    -- Métricas de Fonte (são as mesmas para a cidade/ano, independente da estimativa)
+    PopulacaoTotal INT NOT NULL CHECK(PopulacaoTotal >= 0),
+    QtdFarmacias INT NOT NULL CHECK(QtdFarmacias >= 0),
+    ValorPIBComercioServicos BIGINT NOT NULL CHECK(ValorPIBComercioServicos >= 0),
+
+    -- Métricas Agregadas (aqui está a diferença)
+    ScoreFinalNormMedio FLOAT NOT NULL, -- A média do ScoreFinalNorm de todas as estimativas
+    ScoreFinalNormMax FLOAT NOT NULL,   -- O score máximo que a cidade atingiu (considerando a melhor estimativa)
+    RankingGlobal INT,                  -- Um ranking geral (baseado no score médio)
+
+    -- Chave Primária
+    PRIMARY KEY (KeyCidadePotencial, AnoScore)
 );

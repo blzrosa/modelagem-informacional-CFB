@@ -1,0 +1,1073 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "f98e1446-2bdb-4d56-bbbc-1df008864e05",
+        "type": "Table",
+        "position": {
+          "x": 291,
+          "y": -308
+        },
+        "data": {
+          "label": "FatoScoreDetalhado",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "246e3186-43c6-4acf-b2d8-955115fe2a16",
+              "name": "AnoScore",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "2e6634ca-f848-46fe-a397-ed7df07b3ecf",
+              "name": "PopulacaoTotal",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "ac7bb510-aa73-40a1-b78b-65ea9d5a8369",
+              "name": "QtdFarmacias",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "24b019ac-92ec-4d10-bd13-e7e2b95556a3",
+              "name": "ValorPIBComercioServicos",
+              "type": "Custom",
+              "position": 0,
+              "size": "BIGINT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c19bdd78-6396-43dc-9cb5-acbcc1b67915",
+              "name": "ScorePopRaw",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "defc4d4a-ebc6-45ac-ab89-bc14d1fd6b39",
+              "name": "ScoreSaturacaoRaw",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "e349090e-4717-4f82-b281-aa5d92aeb2e0",
+              "name": "ScorePIBNorm",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "37f67b1a-8be8-4013-b4f7-9197edff62b0",
+              "name": "ScoreFinal",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "6afc3ef5-f15b-49f0-aba8-953d3a158398",
+              "name": "ScoreFinalNorm",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_906a04f5-7aeb-40b5-9527-4859652f5ad2",
+              "name": "fk_DimCidadePotencial",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "c38fba5c-73a6-4d47-a934-599145fcde81",
+                "sourceTableId": "e7d5ede3-8320-4624-8e1b-250310bc5bce",
+                "columns": [
+                  {
+                    "id": "fk_d3e6c79b-b884-4915-9423-cd28397e3bc0",
+                    "name": "KeyCidadePotencial",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_1051a460-54b0-443f-92db-0cc8a5350d99",
+              "name": "fk_DimEstimativa",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "6999e97a-8980-4b6e-8d04-06ee7434f9fa",
+                "sourceTableId": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d",
+                "columns": [
+                  {
+                    "id": "fk_62b25dd1-6130-4ce7-bf8e-6927f15b64e3",
+                    "name": "KeyEstimativa",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_ceceaa1c-9e97-4557-9379-bb32919a3f1c",
+              "name": "fk_DimPIB",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "9a52d006-f1eb-46e0-ad38-3bc415a385e5",
+                "sourceTableId": "38a5b577-1da4-4ef2-808c-037ae2414295",
+                "columns": [
+                  {
+                    "id": "fk_7ab1e467-323f-413e-a42b-8d8d1bcd9e3a",
+                    "name": "KeyPIB",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_c7ea6a41-0e7e-438d-aabe-0ffb856b0651",
+              "name": "fk_DimContagemFarmacias",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "d92bc343-34e4-48d2-9942-f4f2dc21532e",
+                "sourceTableId": "4f5b083d-8d76-4368-a987-d635b9e224f6",
+                "columns": [
+                  {
+                    "id": "fk_a087c8c2-9b20-452c-8ff9-22670ca8ba0f",
+                    "name": "KeyContagemFarmacias",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_6ff5f316-80dd-4fa5-9eed-788ed5109e92",
+              "name": "fk_DimPopulacao",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "bab7ee30-d1d1-49de-ba90-6dfba4585d5c",
+                "sourceTableId": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b",
+                "columns": [
+                  {
+                    "id": "fk_b879e5f2-8b80-441c-ad79-98265fb3cfb8",
+                    "name": "KeyPopulacao",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_53f7043c-ef0c-4109-b385-22b95f646cc8",
+              "name": "fk_DimPesoFaixaEtaria",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "b3f03bf2-ece0-45a3-b013-a0480acba219",
+                "sourceTableId": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba",
+                "columns": [
+                  {
+                    "id": "fk_4d1b198d-3684-414d-9230-e2b8797067e9",
+                    "name": "KeyPesoFaixaEtaria",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false,
+          "isFactTable": true
+        },
+        "measured": {
+          "width": 240,
+          "height": 438
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4f47be6c-5f64-43f4-b12f-434419231867",
+        "type": "Table",
+        "position": {
+          "x": 299,
+          "y": 176
+        },
+        "data": {
+          "label": "FatoScoreAgregado",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "ff7b6694-d4d2-4ec1-be0e-6eac5034d8e2",
+              "name": "AnoScore",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "cdec45d8-4398-499f-be65-ae2605373c1f",
+              "name": "PopulacaoTotal",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "5594fcf6-2d44-4465-bb23-73ebf02bbb5e",
+              "name": "QtdFarmacias",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "d44f9589-bbc5-4cb7-816e-930d0c97ae75",
+              "name": "ValorPIBComercioServicos",
+              "type": "Custom",
+              "position": 0,
+              "size": "BIGINT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "cba54f01-656a-4647-a49d-7a28d57e707d",
+              "name": "ScoreFinalNormMedio",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7e9c1f81-f79f-4ac0-8238-6ffe8cb356fc",
+              "name": "ScoreFinalNormMax",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "2400dc2c-b4dd-40d6-aa2e-4c36dafd7fd7",
+              "name": "RankingGlobal",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_17749ce1-542f-4714-9816-b0a84a4f08c1",
+              "name": "fk_DimCidadePotencial",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "6cb2ee7b-a91b-4819-bb37-03a09f8e031b",
+                "sourceTableId": "e7d5ede3-8320-4624-8e1b-250310bc5bce",
+                "columns": [
+                  {
+                    "id": "fk_d3e6c79b-b884-4915-9423-cd28397e3bc0",
+                    "name": "KeyCidadePotencial",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_43893d87-e70d-4582-94ed-a0b9a8c0b9e4",
+              "name": "fk_DimEstimativa",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "2aa342d7-e2c3-4741-b3e5-263e32f9aff7",
+                "sourceTableId": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d",
+                "columns": [
+                  {
+                    "id": "fk_62b25dd1-6130-4ce7-bf8e-6927f15b64e3",
+                    "name": "KeyEstimativa",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_e947208d-f63b-4e2d-81a8-2c63e38ac934",
+              "name": "fk_DimPIB",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "a43b46f9-2549-4294-a33f-47365444c0a5",
+                "sourceTableId": "38a5b577-1da4-4ef2-808c-037ae2414295",
+                "columns": [
+                  {
+                    "id": "fk_7ab1e467-323f-413e-a42b-8d8d1bcd9e3a",
+                    "name": "KeyPIB",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_786102f8-a3e2-4f04-b610-86d78128e2c6",
+              "name": "fk_DimContagemFarmacias",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "e094c8c0-ee6d-4dc9-b284-946851b2cdf3",
+                "sourceTableId": "4f5b083d-8d76-4368-a987-d635b9e224f6",
+                "columns": [
+                  {
+                    "id": "fk_a087c8c2-9b20-452c-8ff9-22670ca8ba0f",
+                    "name": "KeyContagemFarmacias",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_1b5f8c28-6b14-4bc4-a822-b6182b05e160",
+              "name": "fk_DimPopulacao",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "9532f704-87cd-42b3-9e54-68515efa1208",
+                "sourceTableId": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b",
+                "columns": [
+                  {
+                    "id": "fk_b879e5f2-8b80-441c-ad79-98265fb3cfb8",
+                    "name": "KeyPopulacao",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_1372dc9f-ae6d-48ff-b25a-dbaa4587b497",
+              "name": "fk_DimPesoFaixaEtaria",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "5ecb27aa-6217-4322-85d2-8bcd4c8a5d95",
+                "sourceTableId": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba",
+                "columns": [
+                  {
+                    "id": "fk_4d1b198d-3684-414d-9230-e2b8797067e9",
+                    "name": "KeyPesoFaixaEtaria",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false,
+          "isFactTable": true
+        },
+        "measured": {
+          "width": 240,
+          "height": 388
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "e7d5ede3-8320-4624-8e1b-250310bc5bce",
+        "type": "Table",
+        "position": {
+          "x": 601.5,
+          "y": -107
+        },
+        "data": {
+          "label": "DimCidadePotencial",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "d3e6c79b-b884-4915-9423-cd28397e3bc0",
+              "name": "KeyCidadePotencial",
+              "type": "INT",
+              "position": 0,
+              "isUnique": false,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "f6e623fb-dac4-4826-9d9a-516d19196cbc",
+              "name": "NomeCidadePotencial",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "255",
+              "isUnique": false,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7d3c17f5-3ff8-4700-a2bf-784fda81e43f",
+              "name": "UFCidadePotencial",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "2",
+              "isUnique": false,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "da245061-73ba-4a7b-a3c1-094d2e020c30",
+              "name": "CodigoIBGE",
+              "type": "CHAR(n)",
+              "position": 0,
+              "isUnique": true,
+              "size": "7",
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 126
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b",
+        "type": "Table",
+        "position": {
+          "x": 678,
+          "y": 73
+        },
+        "data": {
+          "label": "DimPopulacao",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "b879e5f2-8b80-441c-ad79-98265fb3cfb8",
+              "name": "KeyPopulacao",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "c6275d7c-47f3-4ddf-9a0c-f435b3f71e3f",
+              "name": "ContagemPop",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "362cef69-91c2-4cec-bc0d-c592e2fae563",
+              "name": "FaixaEtariaPop",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "32",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "88d5014a-8be3-43f5-9ead-6fc0a5a7076f",
+              "name": "SexoPop",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "1",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "b7f00a4f-ecbf-42ae-bb48-3df28cccb2f1",
+              "name": "NomeCidadePopulacao",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "255",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "562dd8af-1578-443f-ad97-7a707f4220f1",
+              "name": "UFPopulacao",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "2",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "80000fb4-0433-4429-8cf7-ba779dd9c04c",
+              "name": "CodigoIBGE",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "7",
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 201
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba",
+        "type": "Table",
+        "position": {
+          "x": 630,
+          "y": 341
+        },
+        "data": {
+          "label": "DimPesoFaixaEtaria",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "4d1b198d-3684-414d-9230-e2b8797067e9",
+              "name": "KeyPesoFaixaEtaria",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "9218ea3e-3705-4766-a321-0a72b4a45a29",
+              "name": "NomeEstimativa",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "255",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "6af4c61d-d76b-4a13-9d37-6e0057fc6b8f",
+              "name": "FaixaEtaria",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "32",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "b63d21c8-837e-4c38-b0ea-e52420027fb0",
+              "name": "SexoFaixaEtaria",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "1",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "ecbe2c24-ab64-42f9-a82d-07366558c1f7",
+              "name": "ValorPeso",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 151
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4f5b083d-8d76-4368-a987-d635b9e224f6",
+        "type": "Table",
+        "position": {
+          "x": 3.175018310546875,
+          "y": 355
+        },
+        "data": {
+          "label": "DimContagemFarmacias",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "a087c8c2-9b20-452c-8ff9-22670ca8ba0f",
+              "name": "KeyContagemFarmacias",
+              "type": "INT",
+              "position": 0,
+              "isOptional": false,
+              "isPrimaryKey": true
+            },
+            {
+              "id": "fefcd014-066c-422c-939d-0921728bc9b2",
+              "name": "QtdFarmacias",
+              "type": "INT",
+              "position": 0,
+              "isOptional": true,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "138f1575-b0b0-4392-8ded-125374097b62",
+              "name": "NomeCidadeContagem",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "255",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "b6ae3e52-97f3-42d5-b20b-b0f835ecdc04",
+              "name": "UFContagem",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "2",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "d378219f-72f9-436f-b030-a5c4e2f21837",
+              "name": "CodigoIBGE",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "7",
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 167
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "38a5b577-1da4-4ef2-808c-037ae2414295",
+        "type": "Table",
+        "position": {
+          "x": -145.5,
+          "y": 95
+        },
+        "data": {
+          "label": "DimPIB",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "7ab1e467-323f-413e-a42b-8d8d1bcd9e3a",
+              "name": "KeyPIB",
+              "type": "INT",
+              "position": 0,
+              "isOptional": false,
+              "isPrimaryKey": true
+            },
+            {
+              "id": "a98a17c4-893e-4d80-ae2a-0b8b69835681",
+              "name": "ValorPIB",
+              "type": "Custom",
+              "position": 0,
+              "size": "BIGINT",
+              "isOptional": true,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "13651f65-a455-43b9-8670-4d8b4b8a85e1",
+              "name": "AnoPIB",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "b6059666-065a-4466-ae82-e62c9e910042",
+              "name": "SetorPIB",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "32",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c84acf50-cb2d-42e6-9c1e-3a8e775de88b",
+              "name": "UFPIB",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "2",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "32f2e552-3f06-493b-8900-7aa87bac8c5f",
+              "name": "CodigoIBGE",
+              "type": "CHAR(n)",
+              "position": 0,
+              "size": "7",
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 176
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d",
+        "type": "Table",
+        "position": {
+          "x": 38,
+          "y": -115
+        },
+        "data": {
+          "label": "DimEstimativa",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "62b25dd1-6130-4ce7-bf8e-6927f15b64e3",
+              "name": "KeyEstimativa",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "5a0767e2-6edb-43a2-949d-57fcacab4d77",
+              "name": "NomeEstimativa",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "255",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "acc1d862-2e28-4df0-98eb-de27bc564588",
+              "name": "DescricaoEstimativa",
+              "type": "Custom",
+              "position": 0,
+              "size": "TEXT",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c227fb18-039a-4d42-a436-b4cd041f17ff",
+              "name": "PesoScorePopulacao",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "2d266290-2b8b-4f07-bd8b-4f36e146dd12",
+              "name": "PesoScoreSaturacao",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "0db2024e-a1fd-4520-9f31-82610bd98873",
+              "name": "PesoScorePIB",
+              "type": "FLOAT",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 176
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e7d5ede3-8320-4624-8e1b-250310bc5bce->f98e1446-2bdb-4d56-bbbc-1df008864e05_c38fba5c-73a6-4d47-a934-599145fcde81",
+        "type": "Relational",
+        "source": "e7d5ede3-8320-4624-8e1b-250310bc5bce",
+        "targetHandle": "foreign-key-handle-c38fba5c-73a6-4d47-a934-599145fcde81",
+        "target": "f98e1446-2bdb-4d56-bbbc-1df008864e05",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "c38fba5c-73a6-4d47-a934-599145fcde81",
+            "sourceTableId": "e7d5ede3-8320-4624-8e1b-250310bc5bce",
+            "columns": [
+              {
+                "id": "fk_d3e6c79b-b884-4915-9423-cd28397e3bc0",
+                "name": "KeyCidadePotencial",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d->f98e1446-2bdb-4d56-bbbc-1df008864e05_6999e97a-8980-4b6e-8d04-06ee7434f9fa",
+        "type": "Relational",
+        "source": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d",
+        "targetHandle": "foreign-key-handle-6999e97a-8980-4b6e-8d04-06ee7434f9fa",
+        "target": "f98e1446-2bdb-4d56-bbbc-1df008864e05",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "6999e97a-8980-4b6e-8d04-06ee7434f9fa",
+            "sourceTableId": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d",
+            "columns": [
+              {
+                "id": "fk_62b25dd1-6130-4ce7-bf8e-6927f15b64e3",
+                "name": "KeyEstimativa",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "e7d5ede3-8320-4624-8e1b-250310bc5bce->4f47be6c-5f64-43f4-b12f-434419231867_6cb2ee7b-a91b-4819-bb37-03a09f8e031b",
+        "type": "Relational",
+        "source": "e7d5ede3-8320-4624-8e1b-250310bc5bce",
+        "targetHandle": "foreign-key-handle-6cb2ee7b-a91b-4819-bb37-03a09f8e031b",
+        "target": "4f47be6c-5f64-43f4-b12f-434419231867",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "6cb2ee7b-a91b-4819-bb37-03a09f8e031b",
+            "sourceTableId": "e7d5ede3-8320-4624-8e1b-250310bc5bce",
+            "columns": [
+              {
+                "id": "fk_d3e6c79b-b884-4915-9423-cd28397e3bc0",
+                "name": "KeyCidadePotencial",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "38a5b577-1da4-4ef2-808c-037ae2414295->f98e1446-2bdb-4d56-bbbc-1df008864e05_9a52d006-f1eb-46e0-ad38-3bc415a385e5",
+        "type": "Relational",
+        "source": "38a5b577-1da4-4ef2-808c-037ae2414295",
+        "targetHandle": "foreign-key-handle-9a52d006-f1eb-46e0-ad38-3bc415a385e5",
+        "target": "f98e1446-2bdb-4d56-bbbc-1df008864e05",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "9a52d006-f1eb-46e0-ad38-3bc415a385e5",
+            "sourceTableId": "38a5b577-1da4-4ef2-808c-037ae2414295",
+            "columns": [
+              {
+                "id": "fk_7ab1e467-323f-413e-a42b-8d8d1bcd9e3a",
+                "name": "KeyPIB",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4f5b083d-8d76-4368-a987-d635b9e224f6->f98e1446-2bdb-4d56-bbbc-1df008864e05_d92bc343-34e4-48d2-9942-f4f2dc21532e",
+        "type": "Relational",
+        "source": "4f5b083d-8d76-4368-a987-d635b9e224f6",
+        "targetHandle": "foreign-key-handle-d92bc343-34e4-48d2-9942-f4f2dc21532e",
+        "target": "f98e1446-2bdb-4d56-bbbc-1df008864e05",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "d92bc343-34e4-48d2-9942-f4f2dc21532e",
+            "sourceTableId": "4f5b083d-8d76-4368-a987-d635b9e224f6",
+            "columns": [
+              {
+                "id": "fk_a087c8c2-9b20-452c-8ff9-22670ca8ba0f",
+                "name": "KeyContagemFarmacias",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b->f98e1446-2bdb-4d56-bbbc-1df008864e05_bab7ee30-d1d1-49de-ba90-6dfba4585d5c",
+        "type": "Relational",
+        "source": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b",
+        "targetHandle": "foreign-key-handle-bab7ee30-d1d1-49de-ba90-6dfba4585d5c",
+        "target": "f98e1446-2bdb-4d56-bbbc-1df008864e05",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "bab7ee30-d1d1-49de-ba90-6dfba4585d5c",
+            "sourceTableId": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b",
+            "columns": [
+              {
+                "id": "fk_b879e5f2-8b80-441c-ad79-98265fb3cfb8",
+                "name": "KeyPopulacao",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba->f98e1446-2bdb-4d56-bbbc-1df008864e05_b3f03bf2-ece0-45a3-b013-a0480acba219",
+        "type": "Relational",
+        "source": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba",
+        "targetHandle": "foreign-key-handle-b3f03bf2-ece0-45a3-b013-a0480acba219",
+        "target": "f98e1446-2bdb-4d56-bbbc-1df008864e05",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "b3f03bf2-ece0-45a3-b013-a0480acba219",
+            "sourceTableId": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba",
+            "columns": [
+              {
+                "id": "fk_4d1b198d-3684-414d-9230-e2b8797067e9",
+                "name": "KeyPesoFaixaEtaria",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d->4f47be6c-5f64-43f4-b12f-434419231867_2aa342d7-e2c3-4741-b3e5-263e32f9aff7",
+        "type": "Relational",
+        "source": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d",
+        "targetHandle": "foreign-key-handle-2aa342d7-e2c3-4741-b3e5-263e32f9aff7",
+        "target": "4f47be6c-5f64-43f4-b12f-434419231867",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "2aa342d7-e2c3-4741-b3e5-263e32f9aff7",
+            "sourceTableId": "4cc2bcb6-880f-47b5-96e9-06295e5aaf5d",
+            "columns": [
+              {
+                "id": "fk_62b25dd1-6130-4ce7-bf8e-6927f15b64e3",
+                "name": "KeyEstimativa",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "38a5b577-1da4-4ef2-808c-037ae2414295->4f47be6c-5f64-43f4-b12f-434419231867_a43b46f9-2549-4294-a33f-47365444c0a5",
+        "type": "Relational",
+        "source": "38a5b577-1da4-4ef2-808c-037ae2414295",
+        "targetHandle": "foreign-key-handle-a43b46f9-2549-4294-a33f-47365444c0a5",
+        "target": "4f47be6c-5f64-43f4-b12f-434419231867",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "a43b46f9-2549-4294-a33f-47365444c0a5",
+            "sourceTableId": "38a5b577-1da4-4ef2-808c-037ae2414295",
+            "columns": [
+              {
+                "id": "fk_7ab1e467-323f-413e-a42b-8d8d1bcd9e3a",
+                "name": "KeyPIB",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4f5b083d-8d76-4368-a987-d635b9e224f6->4f47be6c-5f64-43f4-b12f-434419231867_e094c8c0-ee6d-4dc9-b284-946851b2cdf3",
+        "type": "Relational",
+        "source": "4f5b083d-8d76-4368-a987-d635b9e224f6",
+        "targetHandle": "foreign-key-handle-e094c8c0-ee6d-4dc9-b284-946851b2cdf3",
+        "target": "4f47be6c-5f64-43f4-b12f-434419231867",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "e094c8c0-ee6d-4dc9-b284-946851b2cdf3",
+            "sourceTableId": "4f5b083d-8d76-4368-a987-d635b9e224f6",
+            "columns": [
+              {
+                "id": "fk_a087c8c2-9b20-452c-8ff9-22670ca8ba0f",
+                "name": "KeyContagemFarmacias",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b->4f47be6c-5f64-43f4-b12f-434419231867_9532f704-87cd-42b3-9e54-68515efa1208",
+        "type": "Relational",
+        "source": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b",
+        "targetHandle": "foreign-key-handle-9532f704-87cd-42b3-9e54-68515efa1208",
+        "target": "4f47be6c-5f64-43f4-b12f-434419231867",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "9532f704-87cd-42b3-9e54-68515efa1208",
+            "sourceTableId": "c0752d84-ea2a-4efb-9dbe-5f4c72dceb1b",
+            "columns": [
+              {
+                "id": "fk_b879e5f2-8b80-441c-ad79-98265fb3cfb8",
+                "name": "KeyPopulacao",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba->4f47be6c-5f64-43f4-b12f-434419231867_5ecb27aa-6217-4322-85d2-8bcd4c8a5d95",
+        "type": "Relational",
+        "source": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba",
+        "targetHandle": "foreign-key-handle-5ecb27aa-6217-4322-85d2-8bcd4c8a5d95",
+        "target": "4f47be6c-5f64-43f4-b12f-434419231867",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "5ecb27aa-6217-4322-85d2-8bcd4c8a5d95",
+            "sourceTableId": "9ab6d2ba-3a1d-47b7-9e53-c86af2e529ba",
+            "columns": [
+              {
+                "id": "fk_4d1b198d-3684-414d-9230-e2b8797067e9",
+                "name": "KeyPesoFaixaEtaria",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 459.375,
+      "y": 155.5,
+      "zoom": 0.5
+    }
+  },
+  "name": "ConstelationScoreCFB",
+  "folder": {
+    "name": "MI",
+    "folderType": 2,
+    "parentFolder": {
+      "depth": 0,
+      "id": 18722,
+      "name": "Diagrams",
+      "folderType": 1
+    },
+    "depth": 1,
+    "id": 140094
+  },
+  "id": 165912,
+  "updatedAtTimestamp": 1763378866
+}

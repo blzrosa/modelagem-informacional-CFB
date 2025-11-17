@@ -48,6 +48,7 @@ PopFiltrada AS (
 -- 3. Filtra PIB ('Comércio e Serviços' e Ano 2021)
 PIBFiltrado AS (
     SELECT
+        KeyPIB, -- ADICIONADO
         CodigoIBGE,
         ValorPIB
     FROM dw_score.DimPIB
@@ -78,6 +79,8 @@ FatoStagingRaw AS (
     SELECT
         c.KeyCidadePotencial,
         e.KeyEstimativa,
+        farm.KeyContagemFarmacias, -- ADICIONADO
+        pib.KeyPIB,                 -- ADICIONADO
         2021 AS AnoScore, -- Baseado no ano do PIB
         COALESCE(pop.PopulacaoTotal, 0) AS PopulacaoTotal,
         COALESCE(farm.QtdFarmacias, 0) AS QtdFarmacias,
@@ -98,7 +101,7 @@ FatoStagingRaw AS (
 -- 6. Calcula Scores de Saturação e PIB (Raw)
 FatoStagingScores AS (
     SELECT
-        *,
+        *, -- As novas Keys passam automaticamente
         CASE
             WHEN QtdFarmacias = 0 THEN ScorePopRaw
             ELSE ScorePopRaw / QtdFarmacias
@@ -113,7 +116,7 @@ FatoStagingScores AS (
 -- 7. Prepara Normalização (calcula os valores MÁXIMOS)
 FatoStagingNorm AS (
     SELECT
-        *,
+        *, -- As novas Keys passam automaticamente
         LOG(MAX(ScorePopRaw) OVER () + 1) AS MaxLogPop,
         LOG(MAX(ScoreSaturacaoRaw) OVER () + 1) AS MaxLogSaturacao,
         LOG(MAX(ScorePIBRaw) OVER () + 1) AS MaxLogPIB
@@ -124,6 +127,7 @@ FatoStagingNorm AS (
 FatoStagingNormScores AS (
     SELECT
         KeyCidadePotencial, KeyEstimativa, AnoScore,
+        KeyContagemFarmacias, KeyPIB, -- ADICIONADO (para passar adiante)
         PopulacaoTotal, QtdFarmacias, ValorPIBComercioServicos,
         ScorePopRaw, ScoreSaturacaoRaw, ScorePIBRaw,
         
@@ -147,7 +151,7 @@ FatoStagingNormScores AS (
 -- 9. Calcula Score Final (Ponderado com pesos da DimEstimativa)
 FatoStagingFinal AS (
     SELECT
-        s.*,
+        s.*, -- As novas Keys passam automaticamente
         e.PesoScorePopulacao,
         e.PesoScoreSaturacao,
         e.PesoScorePIB,
@@ -164,6 +168,7 @@ FatoStagingFinal AS (
 FatoCalculado AS (
     SELECT
         KeyCidadePotencial, KeyEstimativa, AnoScore,
+        KeyContagemFarmacias, KeyPIB, -- ADICIONADO (para passar adiante)
         PopulacaoTotal, QtdFarmacias, ValorPIBComercioServicos,
         ScorePopRaw, ScoreSaturacaoRaw, ScorePIBRaw,
         ScorePopNorm, ScoreSaturacaoNorm, ScorePIBNorm,
@@ -179,6 +184,7 @@ FatoCalculado AS (
 -- 11. Carga Final na Tabela FatoScoreDetalhado
 INSERT INTO dw_score.FatoScoreDetalhado (
     KeyCidadePotencial, KeyEstimativa, AnoScore,
+    KeyContagemFarmacias, KeyPIB, -- ADICIONADO
     PopulacaoTotal, QtdFarmacias, ValorPIBComercioServicos,
     ScorePopRaw, ScoreSaturacaoRaw, ScorePIBRaw,
     ScorePopNorm, ScoreSaturacaoNorm, ScorePIBNorm,
@@ -195,6 +201,7 @@ SELECT * FROM FatoCalculado;
 */
 INSERT INTO dw_score.FatoScoreAgregado (
     KeyCidadePotencial, AnoScore,
+    KeyContagemFarmacias, KeyPIB, -- ADICIONADO
     PopulacaoTotal, QtdFarmacias, ValorPIBComercioServicos,
     ScoreFinalNormMedio, ScoreFinalNormMax, RankingGlobal
 )
@@ -202,6 +209,8 @@ WITH Agregacao AS (
     SELECT
         KeyCidadePotencial,
         AnoScore,
+        MAX(KeyContagemFarmacias) AS KeyContagemFarmacias, -- ADICIONADO (MAX, MIN, etc. dão o mesmo resultado, pois é 1:1)
+        MAX(KeyPIB) AS KeyPIB,                             -- ADICIONADO (Mesma lógica)
         MAX(PopulacaoTotal) AS PopulacaoTotal,
         MAX(QtdFarmacias) AS QtdFarmacias,
         MAX(ValorPIBComercioServicos) AS ValorPIBComercioServicos,
@@ -214,6 +223,7 @@ WITH Agregacao AS (
 SELECT
     KeyCidadePotencial,
     AnoScore,
+    KeyContagemFarmacias, KeyPIB, -- ADICIONADO
     PopulacaoTotal,
     QtdFarmacias,
     ValorPIBComercioServicos,

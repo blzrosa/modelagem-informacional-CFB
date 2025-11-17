@@ -91,6 +91,10 @@ CREATE TABLE dw_score.FatoScoreDetalhado (
     KeyEstimativa INT NOT NULL REFERENCES dw_score.DimEstimativa(KeyEstimativa),
     AnoScore INT NOT NULL CHECK(AnoScore >= 0),
 
+    -- Outras Chaves Estrangeiras
+    KeyContagemFarmacias INT NULL REFERENCES dw_score.DimContagemFarmacias(KeyContagemFarmacias),
+    KeyPIB INT NULL REFERENCES dw_score.DimPIB(KeyPIB),
+
     -- Métricas de "Fonte" (usadas no cálculo)
     PopulacaoTotal INT NOT NULL CHECK(PopulacaoTotal >= 0),
     QtdFarmacias INT NOT NULL CHECK(QtdFarmacias >= 0),
@@ -124,6 +128,10 @@ CREATE TABLE dw_score.FatoScoreAgregado (
     -- Chaves
     KeyCidadePotencial INT NOT NULL REFERENCES dw_score.DimCidadePotencial(KeyCidadePotencial),
     AnoScore INT NOT NULL CHECK(AnoScore >= 0),
+
+    -- Outras Chaves Estrangeiras
+    KeyContagemFarmacias INT NULL REFERENCES dw_score.DimContagemFarmacias(KeyContagemFarmacias),
+    KeyPIB INT NULL REFERENCES dw_score.DimPIB(KeyPIB),
 
     -- Métricas de Fonte (consolidadas)
     PopulacaoTotal INT NOT NULL CHECK(PopulacaoTotal >= 0),
